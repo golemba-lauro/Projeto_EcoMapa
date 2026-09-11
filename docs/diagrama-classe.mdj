@@ -1,0 +1,4226 @@
+{
+	"_type": "Project",
+	"_id": "ECO00000001=",
+	"name": "EcoMapa - Diagrama de Classes",
+	"ownedElements": [
+		{
+			"_type": "UMLModel",
+			"_id": "ECO00000002=",
+			"_parent": {
+				"$ref": "ECO00000001="
+			},
+			"name": "Model",
+			"ownedElements": [
+				{
+					"_type": "UMLClassDiagram",
+					"_id": "ECO00000003=",
+					"_parent": {
+						"$ref": "ECO00000002="
+					},
+					"name": "Diagrama de Classes",
+					"defaultDiagram": true,
+					"ownedViews": [
+						{
+							"_type": "UMLClassView",
+							"_id": "ECO00000068=",
+							"_parent": {
+								"$ref": "ECO00000003="
+							},
+							"model": {
+								"$ref": "ECO00000004="
+							},
+							"subViews": [
+								{
+									"_type": "UMLReceptionCompartmentView",
+									"_id": "AAAAAAGgjL+W5mmy0hg=",
+									"_parent": {
+										"$ref": "ECO00000068="
+									},
+									"model": {
+										"$ref": "ECO00000004="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"width": 10,
+									"height": 10
+								},
+								{
+									"_type": "UMLNameCompartmentView",
+									"_id": "ECO00000069=",
+									"_parent": {
+										"$ref": "ECO00000068="
+									},
+									"model": {
+										"$ref": "ECO00000004="
+									},
+									"subViews": [
+										{
+											"_type": "LabelView",
+											"_id": "ECO00000074=",
+											"_parent": {
+												"$ref": "ECO00000069="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 643,
+											"top": 60,
+											"height": 13
+										},
+										{
+											"_type": "LabelView",
+											"_id": "ECO00000071=",
+											"_parent": {
+												"$ref": "ECO00000069="
+											},
+											"font": "Arial;13;3",
+											"parentStyle": true,
+											"left": 643,
+											"top": 67,
+											"width": 516,
+											"height": 13,
+											"text": "Usuario"
+										},
+										{
+											"_type": "LabelView",
+											"_id": "ECO00000072=",
+											"_parent": {
+												"$ref": "ECO00000069="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 643,
+											"top": 67,
+											"width": 73.67724609375,
+											"height": 13,
+											"text": "(from Model)"
+										},
+										{
+											"_type": "LabelView",
+											"_id": "ECO00000073=",
+											"_parent": {
+												"$ref": "ECO00000069="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 643,
+											"top": 67,
+											"height": 13,
+											"horizontalAlignment": 1
+										}
+									],
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"left": 638,
+									"top": 60,
+									"width": 526,
+									"height": 25,
+									"stereotypeLabel": {
+										"$ref": "ECO00000074="
+									},
+									"nameLabel": {
+										"$ref": "ECO00000071="
+									},
+									"namespaceLabel": {
+										"$ref": "ECO00000072="
+									},
+									"propertyLabel": {
+										"$ref": "ECO00000073="
+									}
+								},
+								{
+									"_type": "UMLAttributeCompartmentView",
+									"_id": "ECO00000075=",
+									"_parent": {
+										"$ref": "ECO00000068="
+									},
+									"model": {
+										"$ref": "ECO00000004="
+									},
+									"subViews": [
+										{
+											"_type": "UMLAttributeView",
+											"_id": "ECO00000076=",
+											"_parent": {
+												"$ref": "ECO00000075="
+											},
+											"model": {
+												"$ref": "ECO00000005="
+											},
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 643,
+											"top": 90,
+											"width": 516,
+											"height": 13,
+											"text": "-id: int",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "ECO00000077=",
+											"_parent": {
+												"$ref": "ECO00000075="
+											},
+											"model": {
+												"$ref": "ECO00000006="
+											},
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 643,
+											"top": 105,
+											"width": 516,
+											"height": 13,
+											"text": "-nome: String",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "ECO00000078=",
+											"_parent": {
+												"$ref": "ECO00000075="
+											},
+											"model": {
+												"$ref": "ECO00000007="
+											},
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 643,
+											"top": 120,
+											"width": 516,
+											"height": 13,
+											"text": "-email: String",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "ECO00000079=",
+											"_parent": {
+												"$ref": "ECO00000075="
+											},
+											"model": {
+												"$ref": "ECO00000008="
+											},
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 643,
+											"top": 135,
+											"width": 516,
+											"height": 13,
+											"text": "-senha: String",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "ECO00000080=",
+											"_parent": {
+												"$ref": "ECO00000075="
+											},
+											"model": {
+												"$ref": "ECO00000009="
+											},
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 643,
+											"top": 150,
+											"width": 516,
+											"height": 13,
+											"text": "-tipo: String",
+											"horizontalAlignment": 0
+										}
+									],
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"left": 638,
+									"top": 85,
+									"width": 526,
+									"height": 83
+								},
+								{
+									"_type": "UMLOperationCompartmentView",
+									"_id": "ECO00000081=",
+									"_parent": {
+										"$ref": "ECO00000068="
+									},
+									"model": {
+										"$ref": "ECO00000004="
+									},
+									"subViews": [
+										{
+											"_type": "UMLOperationView",
+											"_id": "ECO00000082=",
+											"_parent": {
+												"$ref": "ECO00000081="
+											},
+											"model": {
+												"$ref": "ECO00000010="
+											},
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 643,
+											"top": 173,
+											"width": 516,
+											"height": 13,
+											"text": "+Usuario(id: int, nome: String, email: String, senha: String, tipo: String)",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "ECO00000083=",
+											"_parent": {
+												"$ref": "ECO00000081="
+											},
+											"model": {
+												"$ref": "ECO00000011="
+											},
+											"font": "Arial;13;2",
+											"parentStyle": true,
+											"left": 643,
+											"top": 188,
+											"width": 516,
+											"height": 13,
+											"text": "+exibirPermissoes(): String",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "ECO00000084=",
+											"_parent": {
+												"$ref": "ECO00000081="
+											},
+											"model": {
+												"$ref": "ECO00000012="
+											},
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 643,
+											"top": 203,
+											"width": 516,
+											"height": 13,
+											"text": "+autenticar(email: String, senha: String): boolean",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "ECO00000085=",
+											"_parent": {
+												"$ref": "ECO00000081="
+											},
+											"model": {
+												"$ref": "ECO00000013="
+											},
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 643,
+											"top": 218,
+											"width": 516,
+											"height": 13,
+											"text": "+getters/setters()",
+											"horizontalAlignment": 0
+										}
+									],
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"left": 638,
+									"top": 168,
+									"width": 526,
+									"height": 68
+								},
+								{
+									"_type": "UMLTemplateParameterCompartmentView",
+									"_id": "ECO00000086=",
+									"_parent": {
+										"$ref": "ECO00000068="
+									},
+									"model": {
+										"$ref": "ECO00000004="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"left": 638,
+									"top": 40,
+									"width": 10,
+									"height": 10
+								}
+							],
+							"font": "Arial;13;0",
+							"parentStyle": false,
+							"left": 638,
+							"top": 60,
+							"width": 525,
+							"height": 176,
+							"nameCompartment": {
+								"$ref": "ECO00000069="
+							},
+							"attributeCompartment": {
+								"$ref": "ECO00000075="
+							},
+							"operationCompartment": {
+								"$ref": "ECO00000081="
+							},
+							"receptionCompartment": {
+								"$ref": "AAAAAAGgjL+W5mmy0hg="
+							},
+							"templateParameterCompartment": {
+								"$ref": "ECO00000086="
+							}
+						},
+						{
+							"_type": "UMLClassView",
+							"_id": "ECO00000087=",
+							"_parent": {
+								"$ref": "ECO00000003="
+							},
+							"model": {
+								"$ref": "ECO00000014="
+							},
+							"subViews": [
+								{
+									"_type": "UMLReceptionCompartmentView",
+									"_id": "AAAAAAGgjL+W6GnR840=",
+									"_parent": {
+										"$ref": "ECO00000087="
+									},
+									"model": {
+										"$ref": "ECO00000014="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"left": -316,
+									"top": 74,
+									"width": 10,
+									"height": 10
+								},
+								{
+									"_type": "UMLNameCompartmentView",
+									"_id": "ECO00000088=",
+									"_parent": {
+										"$ref": "ECO00000087="
+									},
+									"model": {
+										"$ref": "ECO00000014="
+									},
+									"subViews": [
+										{
+											"_type": "LabelView",
+											"_id": "ECO00000093=",
+											"_parent": {
+												"$ref": "ECO00000088="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": -247,
+											"top": 514,
+											"height": 13
+										},
+										{
+											"_type": "LabelView",
+											"_id": "ECO00000090=",
+											"_parent": {
+												"$ref": "ECO00000088="
+											},
+											"font": "Arial;13;1",
+											"parentStyle": true,
+											"left": 69,
+											"top": 447,
+											"width": 469,
+											"height": 13,
+											"text": "Cidadao"
+										},
+										{
+											"_type": "LabelView",
+											"_id": "ECO00000091=",
+											"_parent": {
+												"$ref": "ECO00000088="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": -247,
+											"top": 521,
+											"width": 73.67724609375,
+											"height": 13,
+											"text": "(from Model)"
+										},
+										{
+											"_type": "LabelView",
+											"_id": "ECO00000092=",
+											"_parent": {
+												"$ref": "ECO00000088="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": -247,
+											"top": 521,
+											"height": 13,
+											"horizontalAlignment": 1
+										}
+									],
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"left": 64,
+									"top": 440,
+									"width": 479,
+									"height": 25,
+									"stereotypeLabel": {
+										"$ref": "ECO00000093="
+									},
+									"nameLabel": {
+										"$ref": "ECO00000090="
+									},
+									"namespaceLabel": {
+										"$ref": "ECO00000091="
+									},
+									"propertyLabel": {
+										"$ref": "ECO00000092="
+									}
+								},
+								{
+									"_type": "UMLAttributeCompartmentView",
+									"_id": "ECO00000094=",
+									"_parent": {
+										"$ref": "ECO00000087="
+									},
+									"model": {
+										"$ref": "ECO00000014="
+									},
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"left": 64,
+									"top": 465,
+									"width": 479,
+									"height": 10
+								},
+								{
+									"_type": "UMLOperationCompartmentView",
+									"_id": "ECO00000095=",
+									"_parent": {
+										"$ref": "ECO00000087="
+									},
+									"model": {
+										"$ref": "ECO00000014="
+									},
+									"subViews": [
+										{
+											"_type": "UMLOperationView",
+											"_id": "ECO00000096=",
+											"_parent": {
+												"$ref": "ECO00000095="
+											},
+											"model": {
+												"$ref": "ECO00000015="
+											},
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 69,
+											"top": 480,
+											"width": 469,
+											"height": 13,
+											"text": "+Cidadao(id: int, nome: String, email: String, senha: String)",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "ECO00000097=",
+											"_parent": {
+												"$ref": "ECO00000095="
+											},
+											"model": {
+												"$ref": "ECO00000016="
+											},
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 69,
+											"top": 495,
+											"width": 469,
+											"height": 13,
+											"text": "+exibirPermissoes(): String",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "ECO00000098=",
+											"_parent": {
+												"$ref": "ECO00000095="
+											},
+											"model": {
+												"$ref": "ECO00000017="
+											},
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 69,
+											"top": 510,
+											"width": 469,
+											"height": 13,
+											"text": "+registrarFeedback(ponto: PontoColeta, descricao: String): Feedback",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "ECO00000099=",
+											"_parent": {
+												"$ref": "ECO00000095="
+											},
+											"model": {
+												"$ref": "ECO00000018="
+											},
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 69,
+											"top": 525,
+											"width": 469,
+											"height": 13,
+											"text": "+consultarPontosPorMaterial(nomeMaterial: String): List<PontoColeta>",
+											"horizontalAlignment": 0
+										}
+									],
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"left": 64,
+									"top": 475,
+									"width": 479,
+									"height": 68
+								},
+								{
+									"_type": "UMLTemplateParameterCompartmentView",
+									"_id": "ECO00000100=",
+									"_parent": {
+										"$ref": "ECO00000087="
+									},
+									"model": {
+										"$ref": "ECO00000014="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"left": 64,
+									"top": 420,
+									"width": 10,
+									"height": 10
+								}
+							],
+							"font": "Arial;13;0",
+							"parentStyle": false,
+							"left": 64,
+							"top": 440,
+							"width": 478,
+							"height": 103,
+							"nameCompartment": {
+								"$ref": "ECO00000088="
+							},
+							"attributeCompartment": {
+								"$ref": "ECO00000094="
+							},
+							"operationCompartment": {
+								"$ref": "ECO00000095="
+							},
+							"receptionCompartment": {
+								"$ref": "AAAAAAGgjL+W6GnR840="
+							},
+							"templateParameterCompartment": {
+								"$ref": "ECO00000100="
+							}
+						},
+						{
+							"_type": "UMLClassView",
+							"_id": "ECO00000101=",
+							"_parent": {
+								"$ref": "ECO00000003="
+							},
+							"model": {
+								"$ref": "ECO00000019="
+							},
+							"subViews": [
+								{
+									"_type": "UMLReceptionCompartmentView",
+									"_id": "AAAAAAGgjL+W6GnrMT8=",
+									"_parent": {
+										"$ref": "ECO00000101="
+									},
+									"model": {
+										"$ref": "ECO00000019="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"width": 10,
+									"height": 10
+								},
+								{
+									"_type": "UMLNameCompartmentView",
+									"_id": "ECO00000102=",
+									"_parent": {
+										"$ref": "ECO00000101="
+									},
+									"model": {
+										"$ref": "ECO00000019="
+									},
+									"subViews": [
+										{
+											"_type": "LabelView",
+											"_id": "ECO00000107=",
+											"_parent": {
+												"$ref": "ECO00000102="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 953,
+											"top": 366,
+											"height": 13
+										},
+										{
+											"_type": "LabelView",
+											"_id": "ECO00000104=",
+											"_parent": {
+												"$ref": "ECO00000102="
+											},
+											"font": "Arial;13;1",
+											"parentStyle": true,
+											"left": 953,
+											"top": 373,
+											"width": 463,
+											"height": 13,
+											"text": "Administrador"
+										},
+										{
+											"_type": "LabelView",
+											"_id": "ECO00000105=",
+											"_parent": {
+												"$ref": "ECO00000102="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 953,
+											"top": 373,
+											"width": 73.67724609375,
+											"height": 13,
+											"text": "(from Model)"
+										},
+										{
+											"_type": "LabelView",
+											"_id": "ECO00000106=",
+											"_parent": {
+												"$ref": "ECO00000102="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 953,
+											"top": 373,
+											"height": 13,
+											"horizontalAlignment": 1
+										}
+									],
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"left": 948,
+									"top": 366,
+									"width": 473,
+									"height": 25,
+									"stereotypeLabel": {
+										"$ref": "ECO00000107="
+									},
+									"nameLabel": {
+										"$ref": "ECO00000104="
+									},
+									"namespaceLabel": {
+										"$ref": "ECO00000105="
+									},
+									"propertyLabel": {
+										"$ref": "ECO00000106="
+									}
+								},
+								{
+									"_type": "UMLAttributeCompartmentView",
+									"_id": "ECO00000108=",
+									"_parent": {
+										"$ref": "ECO00000101="
+									},
+									"model": {
+										"$ref": "ECO00000019="
+									},
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"left": 948,
+									"top": 391,
+									"width": 473,
+									"height": 10
+								},
+								{
+									"_type": "UMLOperationCompartmentView",
+									"_id": "ECO00000109=",
+									"_parent": {
+										"$ref": "ECO00000101="
+									},
+									"model": {
+										"$ref": "ECO00000019="
+									},
+									"subViews": [
+										{
+											"_type": "UMLOperationView",
+											"_id": "ECO00000110=",
+											"_parent": {
+												"$ref": "ECO00000109="
+											},
+											"model": {
+												"$ref": "ECO00000020="
+											},
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 953,
+											"top": 406,
+											"width": 463,
+											"height": 13,
+											"text": "+Administrador(id: int, nome: String, email: String, senha: String)",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "ECO00000111=",
+											"_parent": {
+												"$ref": "ECO00000109="
+											},
+											"model": {
+												"$ref": "ECO00000021="
+											},
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 953,
+											"top": 421,
+											"width": 463,
+											"height": 13,
+											"text": "+exibirPermissoes(): String",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "ECO00000112=",
+											"_parent": {
+												"$ref": "ECO00000109="
+											},
+											"model": {
+												"$ref": "ECO00000022="
+											},
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 953,
+											"top": 436,
+											"width": 463,
+											"height": 13,
+											"text": "+cadastrarPonto(ponto: PontoColeta): boolean",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "ECO00000113=",
+											"_parent": {
+												"$ref": "ECO00000109="
+											},
+											"model": {
+												"$ref": "ECO00000023="
+											},
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 953,
+											"top": 451,
+											"width": 463,
+											"height": 13,
+											"text": "+atualizarPonto(ponto: PontoColeta): boolean",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "ECO00000114=",
+											"_parent": {
+												"$ref": "ECO00000109="
+											},
+											"model": {
+												"$ref": "ECO00000024="
+											},
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 953,
+											"top": 466,
+											"width": 463,
+											"height": 13,
+											"text": "+excluirPonto(id: int): boolean",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "ECO00000115=",
+											"_parent": {
+												"$ref": "ECO00000109="
+											},
+											"model": {
+												"$ref": "ECO00000025="
+											},
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 953,
+											"top": 481,
+											"width": 463,
+											"height": 13,
+											"text": "+vincularMaterial(ponto: PontoColeta, material: Material): boolean",
+											"horizontalAlignment": 0
+										}
+									],
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"left": 948,
+									"top": 401,
+									"width": 473,
+									"height": 98
+								},
+								{
+									"_type": "UMLTemplateParameterCompartmentView",
+									"_id": "ECO00000116=",
+									"_parent": {
+										"$ref": "ECO00000101="
+									},
+									"model": {
+										"$ref": "ECO00000019="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"left": 948,
+									"top": 346,
+									"width": 10,
+									"height": 10
+								}
+							],
+							"font": "Arial;13;0",
+							"parentStyle": false,
+							"left": 948,
+							"top": 366,
+							"width": 472,
+							"height": 133,
+							"nameCompartment": {
+								"$ref": "ECO00000102="
+							},
+							"attributeCompartment": {
+								"$ref": "ECO00000108="
+							},
+							"operationCompartment": {
+								"$ref": "ECO00000109="
+							},
+							"receptionCompartment": {
+								"$ref": "AAAAAAGgjL+W6GnrMT8="
+							},
+							"templateParameterCompartment": {
+								"$ref": "ECO00000116="
+							}
+						},
+						{
+							"_type": "UMLClassView",
+							"_id": "ECO00000117=",
+							"_parent": {
+								"$ref": "ECO00000003="
+							},
+							"model": {
+								"$ref": "ECO00000026="
+							},
+							"subViews": [
+								{
+									"_type": "UMLReceptionCompartmentView",
+									"_id": "AAAAAAGgjL+W6WoHfeE=",
+									"_parent": {
+										"$ref": "ECO00000117="
+									},
+									"model": {
+										"$ref": "ECO00000026="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"left": 128,
+									"top": -69,
+									"width": 10,
+									"height": 10
+								},
+								{
+									"_type": "UMLNameCompartmentView",
+									"_id": "ECO00000118=",
+									"_parent": {
+										"$ref": "ECO00000117="
+									},
+									"model": {
+										"$ref": "ECO00000026="
+									},
+									"subViews": [
+										{
+											"_type": "LabelView",
+											"_id": "ECO00000123=",
+											"_parent": {
+												"$ref": "ECO00000118="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 757,
+											"top": 491,
+											"height": 13
+										},
+										{
+											"_type": "LabelView",
+											"_id": "ECO00000120=",
+											"_parent": {
+												"$ref": "ECO00000118="
+											},
+											"font": "Arial;13;1",
+											"parentStyle": true,
+											"left": 629,
+											"top": 567,
+											"width": 799,
+											"height": 13,
+											"text": "PontoColeta"
+										},
+										{
+											"_type": "LabelView",
+											"_id": "ECO00000121=",
+											"_parent": {
+												"$ref": "ECO00000118="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 757,
+											"top": 498,
+											"width": 73.67724609375,
+											"height": 13,
+											"text": "(from Model)"
+										},
+										{
+											"_type": "LabelView",
+											"_id": "ECO00000122=",
+											"_parent": {
+												"$ref": "ECO00000118="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 757,
+											"top": 498,
+											"height": 13,
+											"horizontalAlignment": 1
+										}
+									],
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"left": 624,
+									"top": 560,
+									"width": 809,
+									"height": 25,
+									"stereotypeLabel": {
+										"$ref": "ECO00000123="
+									},
+									"nameLabel": {
+										"$ref": "ECO00000120="
+									},
+									"namespaceLabel": {
+										"$ref": "ECO00000121="
+									},
+									"propertyLabel": {
+										"$ref": "ECO00000122="
+									}
+								},
+								{
+									"_type": "UMLAttributeCompartmentView",
+									"_id": "ECO00000124=",
+									"_parent": {
+										"$ref": "ECO00000117="
+									},
+									"model": {
+										"$ref": "ECO00000026="
+									},
+									"subViews": [
+										{
+											"_type": "UMLAttributeView",
+											"_id": "ECO00000125=",
+											"_parent": {
+												"$ref": "ECO00000124="
+											},
+											"model": {
+												"$ref": "ECO00000027="
+											},
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 629,
+											"top": 590,
+											"width": 799,
+											"height": 13,
+											"text": "-id: int",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "ECO00000126=",
+											"_parent": {
+												"$ref": "ECO00000124="
+											},
+											"model": {
+												"$ref": "ECO00000028="
+											},
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 629,
+											"top": 605,
+											"width": 799,
+											"height": 13,
+											"text": "-nome: String",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "ECO00000127=",
+											"_parent": {
+												"$ref": "ECO00000124="
+											},
+											"model": {
+												"$ref": "ECO00000029="
+											},
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 629,
+											"top": 620,
+											"width": 799,
+											"height": 13,
+											"text": "-endereco: String",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "ECO00000128=",
+											"_parent": {
+												"$ref": "ECO00000124="
+											},
+											"model": {
+												"$ref": "ECO00000030="
+											},
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 629,
+											"top": 635,
+											"width": 799,
+											"height": 13,
+											"text": "-telefone: String",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "ECO00000129=",
+											"_parent": {
+												"$ref": "ECO00000124="
+											},
+											"model": {
+												"$ref": "ECO00000031="
+											},
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 629,
+											"top": 650,
+											"width": 799,
+											"height": 13,
+											"text": "-horarioFuncionamento: String",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "ECO00000130=",
+											"_parent": {
+												"$ref": "ECO00000124="
+											},
+											"model": {
+												"$ref": "ECO00000032="
+											},
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 629,
+											"top": 665,
+											"width": 799,
+											"height": 13,
+											"text": "-status: boolean",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "ECO00000131=",
+											"_parent": {
+												"$ref": "ECO00000124="
+											},
+											"model": {
+												"$ref": "ECO00000033="
+											},
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 629,
+											"top": 680,
+											"width": 799,
+											"height": 13,
+											"text": "-materiaisAceitos: List<Material>",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "ECO00000132=",
+											"_parent": {
+												"$ref": "ECO00000124="
+											},
+											"model": {
+												"$ref": "ECO00000034="
+											},
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 629,
+											"top": 695,
+											"width": 799,
+											"height": 13,
+											"text": "-feedbacks: List<Feedback>",
+											"horizontalAlignment": 0
+										}
+									],
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"left": 624,
+									"top": 585,
+									"width": 809,
+									"height": 128
+								},
+								{
+									"_type": "UMLOperationCompartmentView",
+									"_id": "ECO00000133=",
+									"_parent": {
+										"$ref": "ECO00000117="
+									},
+									"model": {
+										"$ref": "ECO00000026="
+									},
+									"subViews": [
+										{
+											"_type": "UMLOperationView",
+											"_id": "ECO00000134=",
+											"_parent": {
+												"$ref": "ECO00000133="
+											},
+											"model": {
+												"$ref": "ECO00000035="
+											},
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 629,
+											"top": 718,
+											"width": 799,
+											"height": 13,
+											"text": "+PontoColeta(id: int, nome: String, endereco: String, telefone: String, horarioFuncionamento: String, status: boolean)",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "ECO00000135=",
+											"_parent": {
+												"$ref": "ECO00000133="
+											},
+											"model": {
+												"$ref": "ECO00000036="
+											},
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 629,
+											"top": 733,
+											"width": 799,
+											"height": 13,
+											"text": "+adicionarMaterial(material: Material): boolean",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "ECO00000136=",
+											"_parent": {
+												"$ref": "ECO00000133="
+											},
+											"model": {
+												"$ref": "ECO00000037="
+											},
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 629,
+											"top": 748,
+											"width": 799,
+											"height": 13,
+											"text": "+removerMaterial(material: Material): boolean",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "ECO00000137=",
+											"_parent": {
+												"$ref": "ECO00000133="
+											},
+											"model": {
+												"$ref": "ECO00000038="
+											},
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 629,
+											"top": 763,
+											"width": 799,
+											"height": 13,
+											"text": "+aceitaMaterial(nomeMaterial: String): boolean",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "ECO00000138=",
+											"_parent": {
+												"$ref": "ECO00000133="
+											},
+											"model": {
+												"$ref": "ECO00000039="
+											},
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 629,
+											"top": 778,
+											"width": 799,
+											"height": 13,
+											"text": "+adicionarFeedback(feedback: Feedback): void",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "ECO00000139=",
+											"_parent": {
+												"$ref": "ECO00000133="
+											},
+											"model": {
+												"$ref": "ECO00000040="
+											},
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 629,
+											"top": 793,
+											"width": 799,
+											"height": 13,
+											"text": "+estaAtivo(): boolean",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "ECO00000140=",
+											"_parent": {
+												"$ref": "ECO00000133="
+											},
+											"model": {
+												"$ref": "ECO00000041="
+											},
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 629,
+											"top": 808,
+											"width": 799,
+											"height": 13,
+											"text": "+getters/setters()",
+											"horizontalAlignment": 0
+										}
+									],
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"left": 624,
+									"top": 713,
+									"width": 809,
+									"height": 113
+								},
+								{
+									"_type": "UMLTemplateParameterCompartmentView",
+									"_id": "ECO00000141=",
+									"_parent": {
+										"$ref": "ECO00000117="
+									},
+									"model": {
+										"$ref": "ECO00000026="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"left": 624,
+									"top": 540,
+									"width": 10,
+									"height": 10
+								}
+							],
+							"font": "Arial;13;0",
+							"parentStyle": false,
+							"left": 624,
+							"top": 560,
+							"width": 808,
+							"height": 266,
+							"nameCompartment": {
+								"$ref": "ECO00000118="
+							},
+							"attributeCompartment": {
+								"$ref": "ECO00000124="
+							},
+							"operationCompartment": {
+								"$ref": "ECO00000133="
+							},
+							"receptionCompartment": {
+								"$ref": "AAAAAAGgjL+W6WoHfeE="
+							},
+							"templateParameterCompartment": {
+								"$ref": "ECO00000141="
+							}
+						},
+						{
+							"_type": "UMLClassView",
+							"_id": "ECO00000142=",
+							"_parent": {
+								"$ref": "ECO00000003="
+							},
+							"model": {
+								"$ref": "ECO00000049="
+							},
+							"subViews": [
+								{
+									"_type": "UMLReceptionCompartmentView",
+									"_id": "AAAAAAGgjL+W6WosyPE=",
+									"_parent": {
+										"$ref": "ECO00000142="
+									},
+									"model": {
+										"$ref": "ECO00000049="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"width": 10,
+									"height": 10
+								},
+								{
+									"_type": "UMLNameCompartmentView",
+									"_id": "ECO00000143=",
+									"_parent": {
+										"$ref": "ECO00000142="
+									},
+									"model": {
+										"$ref": "ECO00000049="
+									},
+									"subViews": [
+										{
+											"_type": "LabelView",
+											"_id": "ECO00000148=",
+											"_parent": {
+												"$ref": "ECO00000143="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 368,
+											"top": 1025,
+											"height": 13
+										},
+										{
+											"_type": "LabelView",
+											"_id": "ECO00000145=",
+											"_parent": {
+												"$ref": "ECO00000143="
+											},
+											"font": "Arial;13;1",
+											"parentStyle": true,
+											"left": 368,
+											"top": 1032,
+											"width": 483,
+											"height": 13,
+											"text": "Feedback"
+										},
+										{
+											"_type": "LabelView",
+											"_id": "ECO00000146=",
+											"_parent": {
+												"$ref": "ECO00000143="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 368,
+											"top": 1032,
+											"width": 73.67724609375,
+											"height": 13,
+											"text": "(from Model)"
+										},
+										{
+											"_type": "LabelView",
+											"_id": "ECO00000147=",
+											"_parent": {
+												"$ref": "ECO00000143="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 368,
+											"top": 1032,
+											"height": 13,
+											"horizontalAlignment": 1
+										}
+									],
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"left": 363,
+									"top": 1025,
+									"width": 493,
+									"height": 25,
+									"stereotypeLabel": {
+										"$ref": "ECO00000148="
+									},
+									"nameLabel": {
+										"$ref": "ECO00000145="
+									},
+									"namespaceLabel": {
+										"$ref": "ECO00000146="
+									},
+									"propertyLabel": {
+										"$ref": "ECO00000147="
+									}
+								},
+								{
+									"_type": "UMLAttributeCompartmentView",
+									"_id": "ECO00000149=",
+									"_parent": {
+										"$ref": "ECO00000142="
+									},
+									"model": {
+										"$ref": "ECO00000049="
+									},
+									"subViews": [
+										{
+											"_type": "UMLAttributeView",
+											"_id": "ECO00000150=",
+											"_parent": {
+												"$ref": "ECO00000149="
+											},
+											"model": {
+												"$ref": "ECO00000050="
+											},
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 368,
+											"top": 1055,
+											"width": 483,
+											"height": 13,
+											"text": "-id: int",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "ECO00000151=",
+											"_parent": {
+												"$ref": "ECO00000149="
+											},
+											"model": {
+												"$ref": "ECO00000051="
+											},
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 368,
+											"top": 1070,
+											"width": 483,
+											"height": 13,
+											"text": "-descricao: String",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "ECO00000152=",
+											"_parent": {
+												"$ref": "ECO00000149="
+											},
+											"model": {
+												"$ref": "ECO00000052="
+											},
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 368,
+											"top": 1085,
+											"width": 483,
+											"height": 13,
+											"text": "-data: LocalDate",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "ECO00000153=",
+											"_parent": {
+												"$ref": "ECO00000149="
+											},
+											"model": {
+												"$ref": "ECO00000053="
+											},
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 368,
+											"top": 1100,
+											"width": 483,
+											"height": 13,
+											"text": "-status: String",
+											"horizontalAlignment": 0
+										}
+									],
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"left": 363,
+									"top": 1050,
+									"width": 493,
+									"height": 68
+								},
+								{
+									"_type": "UMLOperationCompartmentView",
+									"_id": "ECO00000154=",
+									"_parent": {
+										"$ref": "ECO00000142="
+									},
+									"model": {
+										"$ref": "ECO00000049="
+									},
+									"subViews": [
+										{
+											"_type": "UMLOperationView",
+											"_id": "ECO00000155=",
+											"_parent": {
+												"$ref": "ECO00000154="
+											},
+											"model": {
+												"$ref": "ECO00000054="
+											},
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 368,
+											"top": 1123,
+											"width": 483,
+											"height": 13,
+											"text": "+Feedback(id: int, descricao: String, data: LocalDate, status: String)",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "ECO00000156=",
+											"_parent": {
+												"$ref": "ECO00000154="
+											},
+											"model": {
+												"$ref": "ECO00000055="
+											},
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 368,
+											"top": 1138,
+											"width": 483,
+											"height": 13,
+											"text": "+marcarComoAnalisado(): void",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "ECO00000157=",
+											"_parent": {
+												"$ref": "ECO00000154="
+											},
+											"model": {
+												"$ref": "ECO00000056="
+											},
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 368,
+											"top": 1153,
+											"width": 483,
+											"height": 13,
+											"text": "+getters/setters()",
+											"horizontalAlignment": 0
+										}
+									],
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"left": 363,
+									"top": 1118,
+									"width": 493,
+									"height": 53
+								},
+								{
+									"_type": "UMLTemplateParameterCompartmentView",
+									"_id": "ECO00000158=",
+									"_parent": {
+										"$ref": "ECO00000142="
+									},
+									"model": {
+										"$ref": "ECO00000049="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"left": 363,
+									"top": 1005,
+									"width": 10,
+									"height": 10
+								}
+							],
+							"font": "Arial;13;0",
+							"parentStyle": false,
+							"left": 363,
+							"top": 1025,
+							"width": 492,
+							"height": 146,
+							"nameCompartment": {
+								"$ref": "ECO00000143="
+							},
+							"attributeCompartment": {
+								"$ref": "ECO00000149="
+							},
+							"operationCompartment": {
+								"$ref": "ECO00000154="
+							},
+							"receptionCompartment": {
+								"$ref": "AAAAAAGgjL+W6WosyPE="
+							},
+							"templateParameterCompartment": {
+								"$ref": "ECO00000158="
+							}
+						},
+						{
+							"_type": "UMLClassView",
+							"_id": "ECO00000159=",
+							"_parent": {
+								"$ref": "ECO00000003="
+							},
+							"model": {
+								"$ref": "ECO00000042="
+							},
+							"subViews": [
+								{
+									"_type": "UMLReceptionCompartmentView",
+									"_id": "AAAAAAGgjL+W6mpJrxA=",
+									"_parent": {
+										"$ref": "ECO00000159="
+									},
+									"model": {
+										"$ref": "ECO00000042="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"width": 10,
+									"height": 10
+								},
+								{
+									"_type": "UMLNameCompartmentView",
+									"_id": "ECO00000160=",
+									"_parent": {
+										"$ref": "ECO00000159="
+									},
+									"model": {
+										"$ref": "ECO00000042="
+									},
+									"subViews": [
+										{
+											"_type": "LabelView",
+											"_id": "ECO00000165=",
+											"_parent": {
+												"$ref": "ECO00000160="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 950,
+											"top": 1025,
+											"height": 13
+										},
+										{
+											"_type": "LabelView",
+											"_id": "ECO00000162=",
+											"_parent": {
+												"$ref": "ECO00000160="
+											},
+											"font": "Arial;13;1",
+											"parentStyle": true,
+											"left": 950,
+											"top": 1032,
+											"width": 483,
+											"height": 13,
+											"text": "Material"
+										},
+										{
+											"_type": "LabelView",
+											"_id": "ECO00000163=",
+											"_parent": {
+												"$ref": "ECO00000160="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 950,
+											"top": 1032,
+											"width": 73.67724609375,
+											"height": 13,
+											"text": "(from Model)"
+										},
+										{
+											"_type": "LabelView",
+											"_id": "ECO00000164=",
+											"_parent": {
+												"$ref": "ECO00000160="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 950,
+											"top": 1032,
+											"height": 13,
+											"horizontalAlignment": 1
+										}
+									],
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"left": 945,
+									"top": 1025,
+									"width": 493,
+									"height": 25,
+									"stereotypeLabel": {
+										"$ref": "ECO00000165="
+									},
+									"nameLabel": {
+										"$ref": "ECO00000162="
+									},
+									"namespaceLabel": {
+										"$ref": "ECO00000163="
+									},
+									"propertyLabel": {
+										"$ref": "ECO00000164="
+									}
+								},
+								{
+									"_type": "UMLAttributeCompartmentView",
+									"_id": "ECO00000166=",
+									"_parent": {
+										"$ref": "ECO00000159="
+									},
+									"model": {
+										"$ref": "ECO00000042="
+									},
+									"subViews": [
+										{
+											"_type": "UMLAttributeView",
+											"_id": "ECO00000167=",
+											"_parent": {
+												"$ref": "ECO00000166="
+											},
+											"model": {
+												"$ref": "ECO00000043="
+											},
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 950,
+											"top": 1055,
+											"width": 483,
+											"height": 13,
+											"text": "-id: int {id}",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "ECO00000168=",
+											"_parent": {
+												"$ref": "ECO00000166="
+											},
+											"model": {
+												"$ref": "ECO00000044="
+											},
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 950,
+											"top": 1070,
+											"width": 483,
+											"height": 13,
+											"text": "-nome: String",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "ECO00000169=",
+											"_parent": {
+												"$ref": "ECO00000166="
+											},
+											"model": {
+												"$ref": "ECO00000045="
+											},
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 950,
+											"top": 1085,
+											"width": 483,
+											"height": 13,
+											"text": "-descricao: String",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "ECO00000170=",
+											"_parent": {
+												"$ref": "ECO00000166="
+											},
+											"model": {
+												"$ref": "ECO00000046="
+											},
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 950,
+											"top": 1100,
+											"width": 483,
+											"height": 13,
+											"text": "-categoria: String",
+											"horizontalAlignment": 0
+										}
+									],
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"left": 945,
+									"top": 1050,
+									"width": 493,
+									"height": 68
+								},
+								{
+									"_type": "UMLOperationCompartmentView",
+									"_id": "ECO00000171=",
+									"_parent": {
+										"$ref": "ECO00000159="
+									},
+									"model": {
+										"$ref": "ECO00000042="
+									},
+									"subViews": [
+										{
+											"_type": "UMLOperationView",
+											"_id": "ECO00000172=",
+											"_parent": {
+												"$ref": "ECO00000171="
+											},
+											"model": {
+												"$ref": "ECO00000047="
+											},
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 950,
+											"top": 1123,
+											"width": 483,
+											"height": 13,
+											"text": "+Material(id: int, nome: String, descricao: String, categoria: String)",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "ECO00000173=",
+											"_parent": {
+												"$ref": "ECO00000171="
+											},
+											"model": {
+												"$ref": "ECO00000048="
+											},
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 950,
+											"top": 1138,
+											"width": 483,
+											"height": 13,
+											"text": "+getters/setters()",
+											"horizontalAlignment": 0
+										}
+									],
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"left": 945,
+									"top": 1118,
+									"width": 493,
+									"height": 38
+								},
+								{
+									"_type": "UMLTemplateParameterCompartmentView",
+									"_id": "ECO00000174=",
+									"_parent": {
+										"$ref": "ECO00000159="
+									},
+									"model": {
+										"$ref": "ECO00000042="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"left": 945,
+									"top": 1005,
+									"width": 10,
+									"height": 10
+								}
+							],
+							"font": "Arial;13;0",
+							"parentStyle": false,
+							"left": 945,
+							"top": 1025,
+							"width": 492,
+							"height": 131,
+							"nameCompartment": {
+								"$ref": "ECO00000160="
+							},
+							"attributeCompartment": {
+								"$ref": "ECO00000166="
+							},
+							"operationCompartment": {
+								"$ref": "ECO00000171="
+							},
+							"receptionCompartment": {
+								"$ref": "AAAAAAGgjL+W6mpJrxA="
+							},
+							"templateParameterCompartment": {
+								"$ref": "ECO00000174="
+							}
+						},
+						{
+							"_type": "UMLGeneralizationView",
+							"_id": "ECO00000175=",
+							"_parent": {
+								"$ref": "ECO00000003="
+							},
+							"model": {
+								"$ref": "ECO00000057="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "ECO00000176=",
+									"_parent": {
+										"$ref": "ECO00000175="
+									},
+									"model": {
+										"$ref": "ECO00000057="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"left": 561,
+									"top": 318,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "ECO00000175="
+									},
+									"edgePosition": 1
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "ECO00000177=",
+									"_parent": {
+										"$ref": "ECO00000175="
+									},
+									"model": {
+										"$ref": "ECO00000057="
+									},
+									"visible": null,
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"left": 554,
+									"top": 305,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 30,
+									"hostEdge": {
+										"$ref": "ECO00000175="
+									},
+									"edgePosition": 1
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "ECO00000178=",
+									"_parent": {
+										"$ref": "ECO00000175="
+									},
+									"model": {
+										"$ref": "ECO00000057="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"left": 576,
+									"top": 345,
+									"height": 13,
+									"alpha": -1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "ECO00000175="
+									},
+									"edgePosition": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"parentStyle": false,
+							"head": {
+								"$ref": "ECO00000068="
+							},
+							"tail": {
+								"$ref": "ECO00000087="
+							},
+							"lineStyle": 1,
+							"points": "394:439;745:237",
+							"showVisibility": true,
+							"nameLabel": {
+								"$ref": "ECO00000176="
+							},
+							"stereotypeLabel": {
+								"$ref": "ECO00000177="
+							},
+							"propertyLabel": {
+								"$ref": "ECO00000178="
+							}
+						},
+						{
+							"_type": "UMLGeneralizationView",
+							"_id": "ECO00000179=",
+							"_parent": {
+								"$ref": "ECO00000003="
+							},
+							"model": {
+								"$ref": "ECO00000058="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "ECO00000180=",
+									"_parent": {
+										"$ref": "ECO00000179="
+									},
+									"model": {
+										"$ref": "ECO00000058="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"left": 1042,
+									"top": 305,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "ECO00000179="
+									},
+									"edgePosition": 1
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "ECO00000181=",
+									"_parent": {
+										"$ref": "ECO00000179="
+									},
+									"model": {
+										"$ref": "ECO00000058="
+									},
+									"visible": null,
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"left": 1031,
+									"top": 316,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 30,
+									"hostEdge": {
+										"$ref": "ECO00000179="
+									},
+									"edgePosition": 1
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "ECO00000182=",
+									"_parent": {
+										"$ref": "ECO00000179="
+									},
+									"model": {
+										"$ref": "ECO00000058="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"left": 1063,
+									"top": 284,
+									"height": 13,
+									"alpha": -1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "ECO00000179="
+									},
+									"edgePosition": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"parentStyle": false,
+							"head": {
+								"$ref": "ECO00000068="
+							},
+							"tail": {
+								"$ref": "ECO00000101="
+							},
+							"lineStyle": 1,
+							"points": "1117:365;989:237",
+							"showVisibility": true,
+							"nameLabel": {
+								"$ref": "ECO00000180="
+							},
+							"stereotypeLabel": {
+								"$ref": "ECO00000181="
+							},
+							"propertyLabel": {
+								"$ref": "ECO00000182="
+							}
+						},
+						{
+							"_type": "UMLAssociationView",
+							"_id": "ECO00000183=",
+							"_parent": {
+								"$ref": "ECO00000003="
+							},
+							"model": {
+								"$ref": "ECO00000059="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "ECO00000184=",
+									"_parent": {
+										"$ref": "ECO00000183="
+									},
+									"model": {
+										"$ref": "ECO00000059="
+									},
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"left": 771,
+									"top": 928,
+									"width": 50.22265625,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 14,
+									"hostEdge": {
+										"$ref": "ECO00000183="
+									},
+									"edgePosition": 1,
+									"text": "+contem"
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "ECO00000185=",
+									"_parent": {
+										"$ref": "ECO00000183="
+									},
+									"model": {
+										"$ref": "ECO00000059="
+									},
+									"visible": null,
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"left": 808,
+									"top": 940,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 30,
+									"hostEdge": {
+										"$ref": "ECO00000183="
+									},
+									"edgePosition": 1
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "ECO00000186=",
+									"_parent": {
+										"$ref": "ECO00000183="
+									},
+									"model": {
+										"$ref": "ECO00000059="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"left": 776,
+									"top": 908,
+									"height": 13,
+									"alpha": -1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "ECO00000183="
+									},
+									"edgePosition": 1
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "ECO00000187=",
+									"_parent": {
+										"$ref": "ECO00000183="
+									},
+									"model": {
+										"$ref": "ECO00000060="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"left": 888,
+									"top": 850,
+									"height": 13,
+									"alpha": 0.7853981633974483,
+									"distance": 30,
+									"hostEdge": {
+										"$ref": "ECO00000183="
+									},
+									"edgePosition": 2
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "ECO00000188=",
+									"_parent": {
+										"$ref": "ECO00000183="
+									},
+									"model": {
+										"$ref": "ECO00000060="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"left": 888,
+									"top": 860,
+									"height": 13,
+									"alpha": 0.7853981633974483,
+									"distance": 40,
+									"hostEdge": {
+										"$ref": "ECO00000183="
+									},
+									"edgePosition": 2
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "ECO00000189=",
+									"_parent": {
+										"$ref": "ECO00000183="
+									},
+									"model": {
+										"$ref": "ECO00000060="
+									},
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"left": 856,
+									"top": 827,
+									"width": 16,
+									"height": 13,
+									"alpha": -0.5235987755982988,
+									"distance": 25,
+									"hostEdge": {
+										"$ref": "ECO00000183="
+									},
+									"edgePosition": 2,
+									"text": "1"
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "ECO00000190=",
+									"_parent": {
+										"$ref": "ECO00000183="
+									},
+									"model": {
+										"$ref": "ECO00000061="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"left": 704,
+									"top": 968,
+									"width": 63.5908203125,
+									"height": 13,
+									"alpha": 0.02509946433664667,
+									"distance": 70.00714249274856,
+									"hostEdge": {
+										"$ref": "ECO00000183="
+									},
+									"text": "-feedbacks"
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "ECO00000191=",
+									"_parent": {
+										"$ref": "ECO00000183="
+									},
+									"model": {
+										"$ref": "ECO00000061="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"left": 725,
+									"top": 1018,
+									"height": 13,
+									"alpha": -0.7853981633974483,
+									"distance": 40,
+									"hostEdge": {
+										"$ref": "ECO00000183="
+									}
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "ECO00000192=",
+									"_parent": {
+										"$ref": "ECO00000183="
+									},
+									"model": {
+										"$ref": "ECO00000061="
+									},
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"left": 712,
+									"top": 1000,
+									"width": 36,
+									"height": 13,
+									"alpha": -0.382080625099674,
+									"distance": 47.53945729601885,
+									"hostEdge": {
+										"$ref": "ECO00000183="
+									},
+									"text": "0..*"
+								},
+								{
+									"_type": "UMLQualifierCompartmentView",
+									"_id": "ECO00000193=",
+									"_parent": {
+										"$ref": "ECO00000183="
+									},
+									"model": {
+										"$ref": "ECO00000060="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"width": 10,
+									"height": 10
+								},
+								{
+									"_type": "UMLQualifierCompartmentView",
+									"_id": "ECO00000194=",
+									"_parent": {
+										"$ref": "ECO00000183="
+									},
+									"model": {
+										"$ref": "ECO00000061="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"width": 10,
+									"height": 10
+								}
+							],
+							"font": "Arial;13;0",
+							"parentStyle": false,
+							"head": {
+								"$ref": "ECO00000142="
+							},
+							"tail": {
+								"$ref": "ECO00000117="
+							},
+							"lineStyle": 1,
+							"points": "889:827;686:1024",
+							"showVisibility": true,
+							"nameLabel": {
+								"$ref": "ECO00000184="
+							},
+							"stereotypeLabel": {
+								"$ref": "ECO00000185="
+							},
+							"propertyLabel": {
+								"$ref": "ECO00000186="
+							},
+							"tailRoleNameLabel": {
+								"$ref": "ECO00000187="
+							},
+							"tailPropertyLabel": {
+								"$ref": "ECO00000188="
+							},
+							"tailMultiplicityLabel": {
+								"$ref": "ECO00000189="
+							},
+							"headRoleNameLabel": {
+								"$ref": "ECO00000190="
+							},
+							"headPropertyLabel": {
+								"$ref": "ECO00000191="
+							},
+							"headMultiplicityLabel": {
+								"$ref": "ECO00000192="
+							},
+							"tailQualifiersCompartment": {
+								"$ref": "ECO00000193="
+							},
+							"headQualifiersCompartment": {
+								"$ref": "ECO00000194="
+							}
+						},
+						{
+							"_type": "UMLAssociationView",
+							"_id": "ECO00000195=",
+							"_parent": {
+								"$ref": "ECO00000003="
+							},
+							"model": {
+								"$ref": "ECO00000062="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "ECO00000196=",
+									"_parent": {
+										"$ref": "ECO00000195="
+									},
+									"model": {
+										"$ref": "ECO00000062="
+									},
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"left": 432,
+									"top": 752,
+									"width": 62,
+									"height": 13,
+									"alpha": 2.2422091439856375,
+									"distance": 28.635642126552707,
+									"hostEdge": {
+										"$ref": "ECO00000195="
+									},
+									"edgePosition": 1,
+									"text": "+registra"
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "ECO00000197=",
+									"_parent": {
+										"$ref": "ECO00000195="
+									},
+									"model": {
+										"$ref": "ECO00000062="
+									},
+									"visible": null,
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"left": 477,
+									"top": 764,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 30,
+									"hostEdge": {
+										"$ref": "ECO00000195="
+									},
+									"edgePosition": 1
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "ECO00000198=",
+									"_parent": {
+										"$ref": "ECO00000195="
+									},
+									"model": {
+										"$ref": "ECO00000062="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"left": 437,
+									"top": 784,
+									"height": 13,
+									"alpha": -1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "ECO00000195="
+									},
+									"edgePosition": 1
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "ECO00000199=",
+									"_parent": {
+										"$ref": "ECO00000195="
+									},
+									"model": {
+										"$ref": "ECO00000063="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"left": 358,
+									"top": 547,
+									"height": 13,
+									"alpha": 0.7853981633974483,
+									"distance": 30,
+									"hostEdge": {
+										"$ref": "ECO00000195="
+									},
+									"edgePosition": 2
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "ECO00000200=",
+									"_parent": {
+										"$ref": "ECO00000195="
+									},
+									"model": {
+										"$ref": "ECO00000063="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"left": 367,
+									"top": 550,
+									"height": 13,
+									"alpha": 0.7853981633974483,
+									"distance": 40,
+									"hostEdge": {
+										"$ref": "ECO00000195="
+									},
+									"edgePosition": 2
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "ECO00000201=",
+									"_parent": {
+										"$ref": "ECO00000195="
+									},
+									"model": {
+										"$ref": "ECO00000063="
+									},
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"left": 320,
+									"top": 562,
+									"width": 16,
+									"height": 13,
+									"alpha": -0.5235987755982988,
+									"distance": 25,
+									"hostEdge": {
+										"$ref": "ECO00000195="
+									},
+									"edgePosition": 2,
+									"text": "1"
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "ECO00000202=",
+									"_parent": {
+										"$ref": "ECO00000195="
+									},
+									"model": {
+										"$ref": "ECO00000064="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"left": 528,
+									"top": 959,
+									"width": 63.5908203125,
+									"height": 13,
+									"alpha": -0.24648176992706183,
+									"distance": 59.43904440685432,
+									"hostEdge": {
+										"$ref": "ECO00000195="
+									},
+									"text": "-feedbacks"
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "ECO00000203=",
+									"_parent": {
+										"$ref": "ECO00000195="
+									},
+									"model": {
+										"$ref": "ECO00000064="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"left": 584,
+									"top": 980,
+									"height": 13,
+									"alpha": -0.7853981633974483,
+									"distance": 40,
+									"hostEdge": {
+										"$ref": "ECO00000195="
+									}
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "ECO00000204=",
+									"_parent": {
+										"$ref": "ECO00000195="
+									},
+									"model": {
+										"$ref": "ECO00000064="
+									},
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"left": 504,
+									"top": 998,
+									"width": 36,
+									"height": 13,
+									"alpha": 0.7406738833110653,
+									"distance": 53.48831648126533,
+									"hostEdge": {
+										"$ref": "ECO00000195="
+									},
+									"text": "0..*"
+								},
+								{
+									"_type": "UMLQualifierCompartmentView",
+									"_id": "ECO00000205=",
+									"_parent": {
+										"$ref": "ECO00000195="
+									},
+									"model": {
+										"$ref": "ECO00000063="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"width": 10,
+									"height": 10
+								},
+								{
+									"_type": "UMLQualifierCompartmentView",
+									"_id": "ECO00000206=",
+									"_parent": {
+										"$ref": "ECO00000195="
+									},
+									"model": {
+										"$ref": "ECO00000064="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"width": 10,
+									"height": 10
+								}
+							],
+							"font": "Arial;13;0",
+							"parentStyle": false,
+							"head": {
+								"$ref": "ECO00000142="
+							},
+							"tail": {
+								"$ref": "ECO00000087="
+							},
+							"lineStyle": 1,
+							"points": "330:544;572:1024",
+							"showVisibility": true,
+							"nameLabel": {
+								"$ref": "ECO00000196="
+							},
+							"stereotypeLabel": {
+								"$ref": "ECO00000197="
+							},
+							"propertyLabel": {
+								"$ref": "ECO00000198="
+							},
+							"tailRoleNameLabel": {
+								"$ref": "ECO00000199="
+							},
+							"tailPropertyLabel": {
+								"$ref": "ECO00000200="
+							},
+							"tailMultiplicityLabel": {
+								"$ref": "ECO00000201="
+							},
+							"headRoleNameLabel": {
+								"$ref": "ECO00000202="
+							},
+							"headPropertyLabel": {
+								"$ref": "ECO00000203="
+							},
+							"headMultiplicityLabel": {
+								"$ref": "ECO00000204="
+							},
+							"tailQualifiersCompartment": {
+								"$ref": "ECO00000205="
+							},
+							"headQualifiersCompartment": {
+								"$ref": "ECO00000206="
+							}
+						},
+						{
+							"_type": "UMLAssociationView",
+							"_id": "ECO00000207=",
+							"_parent": {
+								"$ref": "ECO00000003="
+							},
+							"model": {
+								"$ref": "ECO00000065="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "ECO00000208=",
+									"_parent": {
+										"$ref": "ECO00000207="
+									},
+									"model": {
+										"$ref": "ECO00000065="
+									},
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"left": 1120,
+									"top": 912,
+									"width": 49,
+									"height": 13,
+									"alpha": 1.499909154352421,
+									"distance": 22.135943621178654,
+									"hostEdge": {
+										"$ref": "ECO00000207="
+									},
+									"edgePosition": 1,
+									"text": "+aceita"
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "ECO00000209=",
+									"_parent": {
+										"$ref": "ECO00000207="
+									},
+									"model": {
+										"$ref": "ECO00000065="
+									},
+									"visible": null,
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"left": 1150,
+									"top": 907,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 30,
+									"hostEdge": {
+										"$ref": "ECO00000207="
+									},
+									"edgePosition": 1
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "ECO00000210=",
+									"_parent": {
+										"$ref": "ECO00000207="
+									},
+									"model": {
+										"$ref": "ECO00000065="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"left": 1109,
+									"top": 924,
+									"height": 13,
+									"alpha": -1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "ECO00000207="
+									},
+									"edgePosition": 1
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "ECO00000211=",
+									"_parent": {
+										"$ref": "ECO00000207="
+									},
+									"model": {
+										"$ref": "ECO00000066="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"left": 1110,
+									"top": 832,
+									"height": 13,
+									"alpha": 0.7853981633974483,
+									"distance": 30,
+									"hostEdge": {
+										"$ref": "ECO00000207="
+									},
+									"edgePosition": 2
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "ECO00000212=",
+									"_parent": {
+										"$ref": "ECO00000207="
+									},
+									"model": {
+										"$ref": "ECO00000066="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"left": 1119,
+									"top": 836,
+									"height": 13,
+									"alpha": 0.7853981633974483,
+									"distance": 40,
+									"hostEdge": {
+										"$ref": "ECO00000207="
+									},
+									"edgePosition": 2
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "ECO00000213=",
+									"_parent": {
+										"$ref": "ECO00000207="
+									},
+									"model": {
+										"$ref": "ECO00000066="
+									},
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"left": 1048,
+									"top": 845,
+									"width": 36,
+									"height": 13,
+									"alpha": -1.0063930218723973,
+									"distance": 29.410882339705484,
+									"hostEdge": {
+										"$ref": "ECO00000207="
+									},
+									"edgePosition": 2,
+									"text": "0..*"
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "ECO00000214=",
+									"_parent": {
+										"$ref": "ECO00000207="
+									},
+									"model": {
+										"$ref": "ECO00000067="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"left": 1104,
+									"top": 959,
+									"width": 99.6962890625,
+									"height": 13,
+									"alpha": -0.2026673290753811,
+									"distance": 59.033888572581766,
+									"hostEdge": {
+										"$ref": "ECO00000207="
+									},
+									"text": "-materiaisAceitos"
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "ECO00000215=",
+									"_parent": {
+										"$ref": "ECO00000207="
+									},
+									"model": {
+										"$ref": "ECO00000067="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"left": 1179,
+									"top": 981,
+									"height": 13,
+									"alpha": -0.7853981633974483,
+									"distance": 40,
+									"hostEdge": {
+										"$ref": "ECO00000207="
+									}
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "ECO00000216=",
+									"_parent": {
+										"$ref": "ECO00000207="
+									},
+									"model": {
+										"$ref": "ECO00000067="
+									},
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"left": 1112,
+									"top": 999,
+									"width": 36,
+									"height": 13,
+									"alpha": 0.6938006982704747,
+									"distance": 38.47076812334269,
+									"hostEdge": {
+										"$ref": "ECO00000207="
+									},
+									"text": "1..*"
+								},
+								{
+									"_type": "UMLQualifierCompartmentView",
+									"_id": "ECO00000217=",
+									"_parent": {
+										"$ref": "ECO00000207="
+									},
+									"model": {
+										"$ref": "ECO00000066="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"width": 10,
+									"height": 10
+								},
+								{
+									"_type": "UMLQualifierCompartmentView",
+									"_id": "ECO00000218=",
+									"_parent": {
+										"$ref": "ECO00000207="
+									},
+									"model": {
+										"$ref": "ECO00000067="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"width": 10,
+									"height": 10
+								}
+							],
+							"font": "Arial;13;0",
+							"parentStyle": false,
+							"head": {
+								"$ref": "ECO00000159="
+							},
+							"tail": {
+								"$ref": "ECO00000117="
+							},
+							"lineStyle": 1,
+							"points": "1083:827;1164:1024",
+							"showVisibility": true,
+							"nameLabel": {
+								"$ref": "ECO00000208="
+							},
+							"stereotypeLabel": {
+								"$ref": "ECO00000209="
+							},
+							"propertyLabel": {
+								"$ref": "ECO00000210="
+							},
+							"tailRoleNameLabel": {
+								"$ref": "ECO00000211="
+							},
+							"tailPropertyLabel": {
+								"$ref": "ECO00000212="
+							},
+							"tailMultiplicityLabel": {
+								"$ref": "ECO00000213="
+							},
+							"headRoleNameLabel": {
+								"$ref": "ECO00000214="
+							},
+							"headPropertyLabel": {
+								"$ref": "ECO00000215="
+							},
+							"headMultiplicityLabel": {
+								"$ref": "ECO00000216="
+							},
+							"tailQualifiersCompartment": {
+								"$ref": "ECO00000217="
+							},
+							"headQualifiersCompartment": {
+								"$ref": "ECO00000218="
+							}
+						}
+					]
+				},
+				{
+					"_type": "UMLClass",
+					"_id": "ECO00000004=",
+					"_parent": {
+						"$ref": "ECO00000002="
+					},
+					"name": "Usuario",
+					"attributes": [
+						{
+							"_type": "UMLAttribute",
+							"_id": "ECO00000005=",
+							"_parent": {
+								"$ref": "ECO00000004="
+							},
+							"name": "id",
+							"visibility": "private",
+							"type": "int"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "ECO00000006=",
+							"_parent": {
+								"$ref": "ECO00000004="
+							},
+							"name": "nome",
+							"visibility": "private",
+							"type": "String"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "ECO00000007=",
+							"_parent": {
+								"$ref": "ECO00000004="
+							},
+							"name": "email",
+							"visibility": "private",
+							"type": "String"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "ECO00000008=",
+							"_parent": {
+								"$ref": "ECO00000004="
+							},
+							"name": "senha",
+							"visibility": "private",
+							"type": "String"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "ECO00000009=",
+							"_parent": {
+								"$ref": "ECO00000004="
+							},
+							"name": "tipo",
+							"visibility": "private",
+							"type": "String"
+						}
+					],
+					"operations": [
+						{
+							"_type": "UMLOperation",
+							"_id": "ECO00000010=",
+							"_parent": {
+								"$ref": "ECO00000004="
+							},
+							"name": "Usuario",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "ECO00000219=",
+									"_parent": {
+										"$ref": "ECO00000010="
+									},
+									"name": "id",
+									"type": "int"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "ECO00000220=",
+									"_parent": {
+										"$ref": "ECO00000010="
+									},
+									"name": "nome",
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "ECO00000221=",
+									"_parent": {
+										"$ref": "ECO00000010="
+									},
+									"name": "email",
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "ECO00000222=",
+									"_parent": {
+										"$ref": "ECO00000010="
+									},
+									"name": "senha",
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "ECO00000223=",
+									"_parent": {
+										"$ref": "ECO00000010="
+									},
+									"name": "tipo",
+									"type": "String"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "ECO00000011=",
+							"_parent": {
+								"$ref": "ECO00000004="
+							},
+							"name": "exibirPermissoes",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "ECO00000224=",
+									"_parent": {
+										"$ref": "ECO00000011="
+									},
+									"type": "String",
+									"direction": "return"
+								}
+							],
+							"isAbstract": true
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "ECO00000012=",
+							"_parent": {
+								"$ref": "ECO00000004="
+							},
+							"name": "autenticar",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "ECO00000225=",
+									"_parent": {
+										"$ref": "ECO00000012="
+									},
+									"name": "email",
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "ECO00000226=",
+									"_parent": {
+										"$ref": "ECO00000012="
+									},
+									"name": "senha",
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "ECO00000227=",
+									"_parent": {
+										"$ref": "ECO00000012="
+									},
+									"type": "boolean",
+									"direction": "return"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "ECO00000013=",
+							"_parent": {
+								"$ref": "ECO00000004="
+							},
+							"name": "getters/setters"
+						}
+					],
+					"isAbstract": true
+				},
+				{
+					"_type": "UMLClass",
+					"_id": "ECO00000014=",
+					"_parent": {
+						"$ref": "ECO00000002="
+					},
+					"name": "Cidadao",
+					"ownedElements": [
+						{
+							"_type": "UMLGeneralization",
+							"_id": "ECO00000057=",
+							"_parent": {
+								"$ref": "ECO00000014="
+							},
+							"source": {
+								"$ref": "ECO00000014="
+							},
+							"target": {
+								"$ref": "ECO00000004="
+							}
+						},
+						{
+							"_type": "UMLAssociation",
+							"_id": "ECO00000062=",
+							"_parent": {
+								"$ref": "ECO00000014="
+							},
+							"name": "registra",
+							"end1": {
+								"_type": "UMLAssociationEnd",
+								"_id": "ECO00000063=",
+								"_parent": {
+									"$ref": "ECO00000062="
+								},
+								"reference": {
+									"$ref": "ECO00000014="
+								},
+								"multiplicity": "1"
+							},
+							"end2": {
+								"_type": "UMLAssociationEnd",
+								"_id": "ECO00000064=",
+								"_parent": {
+									"$ref": "ECO00000062="
+								},
+								"reference": {
+									"$ref": "ECO00000049="
+								},
+								"visibility": "private",
+								"navigable": "navigable",
+								"multiplicity": "0..*"
+							}
+						}
+					],
+					"operations": [
+						{
+							"_type": "UMLOperation",
+							"_id": "ECO00000015=",
+							"_parent": {
+								"$ref": "ECO00000014="
+							},
+							"name": "Cidadao",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "ECO00000228=",
+									"_parent": {
+										"$ref": "ECO00000015="
+									},
+									"name": "id",
+									"type": "int"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "ECO00000229=",
+									"_parent": {
+										"$ref": "ECO00000015="
+									},
+									"name": "nome",
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "ECO00000230=",
+									"_parent": {
+										"$ref": "ECO00000015="
+									},
+									"name": "email",
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "ECO00000231=",
+									"_parent": {
+										"$ref": "ECO00000015="
+									},
+									"name": "senha",
+									"type": "String"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "ECO00000016=",
+							"_parent": {
+								"$ref": "ECO00000014="
+							},
+							"name": "exibirPermissoes",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "ECO00000232=",
+									"_parent": {
+										"$ref": "ECO00000016="
+									},
+									"type": "String",
+									"direction": "return"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "ECO00000017=",
+							"_parent": {
+								"$ref": "ECO00000014="
+							},
+							"name": "registrarFeedback",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "ECO00000233=",
+									"_parent": {
+										"$ref": "ECO00000017="
+									},
+									"name": "ponto",
+									"type": "PontoColeta"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "ECO00000234=",
+									"_parent": {
+										"$ref": "ECO00000017="
+									},
+									"name": "descricao",
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "ECO00000235=",
+									"_parent": {
+										"$ref": "ECO00000017="
+									},
+									"type": "Feedback",
+									"direction": "return"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "ECO00000018=",
+							"_parent": {
+								"$ref": "ECO00000014="
+							},
+							"name": "consultarPontosPorMaterial",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "ECO00000236=",
+									"_parent": {
+										"$ref": "ECO00000018="
+									},
+									"name": "nomeMaterial",
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "ECO00000237=",
+									"_parent": {
+										"$ref": "ECO00000018="
+									},
+									"type": "List<PontoColeta>",
+									"direction": "return"
+								}
+							]
+						}
+					]
+				},
+				{
+					"_type": "UMLClass",
+					"_id": "ECO00000019=",
+					"_parent": {
+						"$ref": "ECO00000002="
+					},
+					"name": "Administrador",
+					"ownedElements": [
+						{
+							"_type": "UMLGeneralization",
+							"_id": "ECO00000058=",
+							"_parent": {
+								"$ref": "ECO00000019="
+							},
+							"source": {
+								"$ref": "ECO00000019="
+							},
+							"target": {
+								"$ref": "ECO00000004="
+							}
+						}
+					],
+					"operations": [
+						{
+							"_type": "UMLOperation",
+							"_id": "ECO00000020=",
+							"_parent": {
+								"$ref": "ECO00000019="
+							},
+							"name": "Administrador",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "ECO00000238=",
+									"_parent": {
+										"$ref": "ECO00000020="
+									},
+									"name": "id",
+									"type": "int"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "ECO00000239=",
+									"_parent": {
+										"$ref": "ECO00000020="
+									},
+									"name": "nome",
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "ECO00000240=",
+									"_parent": {
+										"$ref": "ECO00000020="
+									},
+									"name": "email",
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "ECO00000241=",
+									"_parent": {
+										"$ref": "ECO00000020="
+									},
+									"name": "senha",
+									"type": "String"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "ECO00000021=",
+							"_parent": {
+								"$ref": "ECO00000019="
+							},
+							"name": "exibirPermissoes",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "ECO00000242=",
+									"_parent": {
+										"$ref": "ECO00000021="
+									},
+									"type": "String",
+									"direction": "return"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "ECO00000022=",
+							"_parent": {
+								"$ref": "ECO00000019="
+							},
+							"name": "cadastrarPonto",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "ECO00000243=",
+									"_parent": {
+										"$ref": "ECO00000022="
+									},
+									"name": "ponto",
+									"type": "PontoColeta"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "ECO00000244=",
+									"_parent": {
+										"$ref": "ECO00000022="
+									},
+									"type": "boolean",
+									"direction": "return"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "ECO00000023=",
+							"_parent": {
+								"$ref": "ECO00000019="
+							},
+							"name": "atualizarPonto",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "ECO00000245=",
+									"_parent": {
+										"$ref": "ECO00000023="
+									},
+									"name": "ponto",
+									"type": "PontoColeta"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "ECO00000246=",
+									"_parent": {
+										"$ref": "ECO00000023="
+									},
+									"type": "boolean",
+									"direction": "return"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "ECO00000024=",
+							"_parent": {
+								"$ref": "ECO00000019="
+							},
+							"name": "excluirPonto",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "ECO00000247=",
+									"_parent": {
+										"$ref": "ECO00000024="
+									},
+									"name": "id",
+									"type": "int"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "ECO00000248=",
+									"_parent": {
+										"$ref": "ECO00000024="
+									},
+									"type": "boolean",
+									"direction": "return"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "ECO00000025=",
+							"_parent": {
+								"$ref": "ECO00000019="
+							},
+							"name": "vincularMaterial",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "ECO00000249=",
+									"_parent": {
+										"$ref": "ECO00000025="
+									},
+									"name": "ponto",
+									"type": "PontoColeta"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "ECO00000250=",
+									"_parent": {
+										"$ref": "ECO00000025="
+									},
+									"name": "material",
+									"type": "Material"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "ECO00000251=",
+									"_parent": {
+										"$ref": "ECO00000025="
+									},
+									"type": "boolean",
+									"direction": "return"
+								}
+							]
+						}
+					]
+				},
+				{
+					"_type": "UMLClass",
+					"_id": "ECO00000026=",
+					"_parent": {
+						"$ref": "ECO00000002="
+					},
+					"name": "PontoColeta",
+					"ownedElements": [
+						{
+							"_type": "UMLAssociation",
+							"_id": "ECO00000059=",
+							"_parent": {
+								"$ref": "ECO00000026="
+							},
+							"name": "contem",
+							"end1": {
+								"_type": "UMLAssociationEnd",
+								"_id": "ECO00000060=",
+								"_parent": {
+									"$ref": "ECO00000059="
+								},
+								"reference": {
+									"$ref": "ECO00000026="
+								},
+								"aggregation": "composite",
+								"multiplicity": "1"
+							},
+							"end2": {
+								"_type": "UMLAssociationEnd",
+								"_id": "ECO00000061=",
+								"_parent": {
+									"$ref": "ECO00000059="
+								},
+								"reference": {
+									"$ref": "ECO00000049="
+								},
+								"visibility": "private",
+								"navigable": "navigable",
+								"multiplicity": "0..*"
+							}
+						},
+						{
+							"_type": "UMLAssociation",
+							"_id": "ECO00000065=",
+							"_parent": {
+								"$ref": "ECO00000026="
+							},
+							"name": "aceita",
+							"end1": {
+								"_type": "UMLAssociationEnd",
+								"_id": "ECO00000066=",
+								"_parent": {
+									"$ref": "ECO00000065="
+								},
+								"reference": {
+									"$ref": "ECO00000026="
+								},
+								"multiplicity": "0..*"
+							},
+							"end2": {
+								"_type": "UMLAssociationEnd",
+								"_id": "ECO00000067=",
+								"_parent": {
+									"$ref": "ECO00000065="
+								},
+								"reference": {
+									"$ref": "ECO00000042="
+								},
+								"visibility": "private",
+								"navigable": "navigable",
+								"multiplicity": "1..*"
+							}
+						}
+					],
+					"attributes": [
+						{
+							"_type": "UMLAttribute",
+							"_id": "ECO00000027=",
+							"_parent": {
+								"$ref": "ECO00000026="
+							},
+							"name": "id",
+							"visibility": "private",
+							"type": "int"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "ECO00000028=",
+							"_parent": {
+								"$ref": "ECO00000026="
+							},
+							"name": "nome",
+							"visibility": "private",
+							"type": "String"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "ECO00000029=",
+							"_parent": {
+								"$ref": "ECO00000026="
+							},
+							"name": "endereco",
+							"visibility": "private",
+							"type": "String"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "ECO00000030=",
+							"_parent": {
+								"$ref": "ECO00000026="
+							},
+							"name": "telefone",
+							"visibility": "private",
+							"type": "String"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "ECO00000031=",
+							"_parent": {
+								"$ref": "ECO00000026="
+							},
+							"name": "horarioFuncionamento",
+							"visibility": "private",
+							"type": "String"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "ECO00000032=",
+							"_parent": {
+								"$ref": "ECO00000026="
+							},
+							"name": "status",
+							"visibility": "private",
+							"type": "boolean"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "ECO00000033=",
+							"_parent": {
+								"$ref": "ECO00000026="
+							},
+							"name": "materiaisAceitos",
+							"visibility": "private",
+							"type": "List<Material>"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "ECO00000034=",
+							"_parent": {
+								"$ref": "ECO00000026="
+							},
+							"name": "feedbacks",
+							"visibility": "private",
+							"type": "List<Feedback>"
+						}
+					],
+					"operations": [
+						{
+							"_type": "UMLOperation",
+							"_id": "ECO00000035=",
+							"_parent": {
+								"$ref": "ECO00000026="
+							},
+							"name": "PontoColeta",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "ECO00000252=",
+									"_parent": {
+										"$ref": "ECO00000035="
+									},
+									"name": "id",
+									"type": "int"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "ECO00000253=",
+									"_parent": {
+										"$ref": "ECO00000035="
+									},
+									"name": "nome",
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "ECO00000254=",
+									"_parent": {
+										"$ref": "ECO00000035="
+									},
+									"name": "endereco",
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "ECO00000255=",
+									"_parent": {
+										"$ref": "ECO00000035="
+									},
+									"name": "telefone",
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "ECO00000256=",
+									"_parent": {
+										"$ref": "ECO00000035="
+									},
+									"name": "horarioFuncionamento",
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "ECO00000257=",
+									"_parent": {
+										"$ref": "ECO00000035="
+									},
+									"name": "status",
+									"type": "boolean"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "ECO00000036=",
+							"_parent": {
+								"$ref": "ECO00000026="
+							},
+							"name": "adicionarMaterial",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "ECO00000258=",
+									"_parent": {
+										"$ref": "ECO00000036="
+									},
+									"name": "material",
+									"type": "Material"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "ECO00000259=",
+									"_parent": {
+										"$ref": "ECO00000036="
+									},
+									"type": "boolean",
+									"direction": "return"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "ECO00000037=",
+							"_parent": {
+								"$ref": "ECO00000026="
+							},
+							"name": "removerMaterial",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "ECO00000260=",
+									"_parent": {
+										"$ref": "ECO00000037="
+									},
+									"name": "material",
+									"type": "Material"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "ECO00000261=",
+									"_parent": {
+										"$ref": "ECO00000037="
+									},
+									"type": "boolean",
+									"direction": "return"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "ECO00000038=",
+							"_parent": {
+								"$ref": "ECO00000026="
+							},
+							"name": "aceitaMaterial",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "ECO00000262=",
+									"_parent": {
+										"$ref": "ECO00000038="
+									},
+									"name": "nomeMaterial",
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "ECO00000263=",
+									"_parent": {
+										"$ref": "ECO00000038="
+									},
+									"type": "boolean",
+									"direction": "return"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "ECO00000039=",
+							"_parent": {
+								"$ref": "ECO00000026="
+							},
+							"name": "adicionarFeedback",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "ECO00000264=",
+									"_parent": {
+										"$ref": "ECO00000039="
+									},
+									"name": "feedback",
+									"type": "Feedback"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "ECO00000265=",
+									"_parent": {
+										"$ref": "ECO00000039="
+									},
+									"type": "void",
+									"direction": "return"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "ECO00000040=",
+							"_parent": {
+								"$ref": "ECO00000026="
+							},
+							"name": "estaAtivo",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "ECO00000266=",
+									"_parent": {
+										"$ref": "ECO00000040="
+									},
+									"type": "boolean",
+									"direction": "return"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "ECO00000041=",
+							"_parent": {
+								"$ref": "ECO00000026="
+							},
+							"name": "getters/setters"
+						}
+					]
+				},
+				{
+					"_type": "UMLClass",
+					"_id": "ECO00000042=",
+					"_parent": {
+						"$ref": "ECO00000002="
+					},
+					"name": "Material",
+					"attributes": [
+						{
+							"_type": "UMLAttribute",
+							"_id": "ECO00000043=",
+							"_parent": {
+								"$ref": "ECO00000042="
+							},
+							"name": "id",
+							"visibility": "private",
+							"type": "int",
+							"isID": true
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "ECO00000044=",
+							"_parent": {
+								"$ref": "ECO00000042="
+							},
+							"name": "nome",
+							"visibility": "private",
+							"type": "String"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "ECO00000045=",
+							"_parent": {
+								"$ref": "ECO00000042="
+							},
+							"name": "descricao",
+							"visibility": "private",
+							"type": "String"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "ECO00000046=",
+							"_parent": {
+								"$ref": "ECO00000042="
+							},
+							"name": "categoria",
+							"visibility": "private",
+							"type": "String"
+						}
+					],
+					"operations": [
+						{
+							"_type": "UMLOperation",
+							"_id": "ECO00000047=",
+							"_parent": {
+								"$ref": "ECO00000042="
+							},
+							"name": "Material",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "ECO00000267=",
+									"_parent": {
+										"$ref": "ECO00000047="
+									},
+									"name": "id",
+									"type": "int"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "ECO00000268=",
+									"_parent": {
+										"$ref": "ECO00000047="
+									},
+									"name": "nome",
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "ECO00000269=",
+									"_parent": {
+										"$ref": "ECO00000047="
+									},
+									"name": "descricao",
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "ECO00000270=",
+									"_parent": {
+										"$ref": "ECO00000047="
+									},
+									"name": "categoria",
+									"type": "String"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "ECO00000048=",
+							"_parent": {
+								"$ref": "ECO00000042="
+							},
+							"name": "getters/setters"
+						}
+					]
+				},
+				{
+					"_type": "UMLClass",
+					"_id": "ECO00000049=",
+					"_parent": {
+						"$ref": "ECO00000002="
+					},
+					"name": "Feedback",
+					"attributes": [
+						{
+							"_type": "UMLAttribute",
+							"_id": "ECO00000050=",
+							"_parent": {
+								"$ref": "ECO00000049="
+							},
+							"name": "id",
+							"visibility": "private",
+							"type": "int"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "ECO00000051=",
+							"_parent": {
+								"$ref": "ECO00000049="
+							},
+							"name": "descricao",
+							"visibility": "private",
+							"type": "String"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "ECO00000052=",
+							"_parent": {
+								"$ref": "ECO00000049="
+							},
+							"name": "data",
+							"visibility": "private",
+							"type": "LocalDate"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "ECO00000053=",
+							"_parent": {
+								"$ref": "ECO00000049="
+							},
+							"name": "status",
+							"visibility": "private",
+							"type": "String"
+						}
+					],
+					"operations": [
+						{
+							"_type": "UMLOperation",
+							"_id": "ECO00000054=",
+							"_parent": {
+								"$ref": "ECO00000049="
+							},
+							"name": "Feedback",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "ECO00000271=",
+									"_parent": {
+										"$ref": "ECO00000054="
+									},
+									"name": "id",
+									"type": "int"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "ECO00000272=",
+									"_parent": {
+										"$ref": "ECO00000054="
+									},
+									"name": "descricao",
+									"type": "String"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "ECO00000273=",
+									"_parent": {
+										"$ref": "ECO00000054="
+									},
+									"name": "data",
+									"type": "LocalDate"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "ECO00000274=",
+									"_parent": {
+										"$ref": "ECO00000054="
+									},
+									"name": "status",
+									"type": "String"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "ECO00000055=",
+							"_parent": {
+								"$ref": "ECO00000049="
+							},
+							"name": "marcarComoAnalisado",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "ECO00000275=",
+									"_parent": {
+										"$ref": "ECO00000055="
+									},
+									"type": "void",
+									"direction": "return"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "ECO00000056=",
+							"_parent": {
+								"$ref": "ECO00000049="
+							},
+							"name": "getters/setters"
+						}
+					]
+				}
+			]
+		}
+	],
+	"documentVersion": 1
+}

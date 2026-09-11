@@ -1,0 +1,37 @@
+# --- Arquivos compilados Java ---
+*.class
+bin/
+out/
+build/
+target/
+
+# --- Pacotes e bibliotecas ---
+*.jar
+*.war
+lib/
+
+# --- IDEs ---
+.vscode/
+.idea/
+*.iml
+*.ipr
+*.iws
+.classpath
+.project
+.settings/
+nbproject/
+nbactions.xml
+
+# --- Sistema operacional ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Configuracoes locais e credenciais ---
+config.properties
+*.local.properties
+*.env
+
+# --- Logs e temporarios ---
+*.log
+*.tmp
