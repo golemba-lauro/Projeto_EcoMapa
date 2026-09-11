@@ -12,7 +12,7 @@ Sistema digital para localização e descarte adequado de resíduos.
 | Nome | R.A. | GitHub |
 |---|---|---|
 | Lauro Golemba Junior | 25362737-2 | `@golemba-lauro` |
-| Enzo Dell'Agnolo | *(preencher)* | `@enzoagnolo` |
+| Enzo Dell'Agnolo | 25017806-2 | `@enzoagnolo` |
 
 **Repositório:** https://github.com/golemba-lauro/Projeto_EcoMapa
 
