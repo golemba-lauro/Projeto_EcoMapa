@@ -1,12 +1,12 @@
 -- =====================================================================
--- EcoMapa - O destino certo para cada residuo
--- Script de criacao do banco de dados
--- AEP 2026.2 - 4o semestre - ADS / Engenharia de Software - UniCesumar
--- SGBD: MySQL 8
+-- EcoMapa — O destino certo para cada resíduo
+-- AEP 2026.2 — UniCesumar — 4º semestre
+-- Script de criação do banco de dados (etapa 10 do cronograma)
+--
+-- Execução:  mysql -u root -p < database/script.sql
 -- =====================================================================
 
 DROP DATABASE IF EXISTS ecomapa;
-
 CREATE DATABASE ecomapa
     DEFAULT CHARACTER SET utf8mb4
     DEFAULT COLLATE utf8mb4_general_ci;
@@ -15,143 +15,99 @@ USE ecomapa;
 
 -- ---------------------------------------------------------------------
 -- USUARIO
--- Mapeamento da heranca do diagrama de classes em tabela unica:
--- a coluna "tipo" e a coluna discriminadora entre Cidadao e Administrador.
--- Requisito R09 | Regras RN04 e RN05
+-- O campo "tipo" é a coluna discriminadora: guarda CIDADAO ou
+-- ADMINISTRADOR e mapeia a herança Usuario -> Cidadao / Administrador
+-- do diagrama de classes para uma única tabela.
 -- ---------------------------------------------------------------------
 CREATE TABLE usuario (
-    id     INT AUTO_INCREMENT PRIMARY KEY,
+    id     INT          NOT NULL AUTO_INCREMENT,
     nome   VARCHAR(100) NOT NULL,
-    email  VARCHAR(120) NOT NULL UNIQUE,
+    email  VARCHAR(150) NOT NULL,
     senha  VARCHAR(255) NOT NULL,
-    tipo   ENUM('CIDADAO', 'ADMINISTRADOR') NOT NULL DEFAULT 'CIDADAO'
-);
+    tipo   VARCHAR(20)  NOT NULL,
+
+    CONSTRAINT pk_usuario    PRIMARY KEY (id),
+    CONSTRAINT uk_usuario_email UNIQUE (email)   -- R09: e-mail identifica o usuário
+) ENGINE = InnoDB;
 
 -- ---------------------------------------------------------------------
--- PONTO_COLETA  (entidade principal do CRUD)
--- Requisitos R01, R04, R05, R06, R07
--- RN01: nome, endereco e horario de funcionamento sao obrigatorios
--- RN06: pontos INATIVOS nao aparecem nas consultas do cidadao
+-- PONTO_COLETA
+-- RN01: nome, endereco e horarioFuncionamento são obrigatórios.
+-- RN06: status indica se o ponto está ativo (1) ou inativo (0).
 -- ---------------------------------------------------------------------
 CREATE TABLE ponto_coleta (
-    id                    INT AUTO_INCREMENT PRIMARY KEY,
-    nome                  VARCHAR(100) NOT NULL,
-    tipo_estabelecimento  VARCHAR(60),
-    logradouro            VARCHAR(120) NOT NULL,
-    numero                VARCHAR(10),
-    bairro                VARCHAR(60),
-    cidade                VARCHAR(60),
-    cep                   VARCHAR(9),
-    telefone              VARCHAR(20),
-    horario_funcionamento VARCHAR(100) NOT NULL,
-    status                ENUM('ATIVO', 'INATIVO') NOT NULL DEFAULT 'ATIVO'
-);
+    id                   INT          NOT NULL AUTO_INCREMENT,
+    nome                 VARCHAR(120) NOT NULL,
+    endereco             VARCHAR(200) NOT NULL,
+    telefone             VARCHAR(20)      NULL,
+    horarioFuncionamento VARCHAR(100) NOT NULL,
+    status               BOOLEAN      NOT NULL DEFAULT TRUE,
+
+    CONSTRAINT pk_ponto_coleta PRIMARY KEY (id)
+) ENGINE = InnoDB;
 
 -- ---------------------------------------------------------------------
 -- MATERIAL
--- Requisito R02 | RN02: nome unico no sistema
+-- RN02: o nome do material é único dentro do sistema.
 -- ---------------------------------------------------------------------
 CREATE TABLE material (
-    id        INT AUTO_INCREMENT PRIMARY KEY,
-    nome      VARCHAR(80) NOT NULL UNIQUE,
-    descricao VARCHAR(255),
-    categoria VARCHAR(60) NOT NULL
-);
+    id        INT          NOT NULL AUTO_INCREMENT,
+    nome      VARCHAR(80)  NOT NULL,
+    descricao VARCHAR(255)     NULL,
+    categoria VARCHAR(50)      NULL,
+
+    CONSTRAINT pk_material      PRIMARY KEY (id),
+    CONSTRAINT uk_material_nome UNIQUE (nome)
+) ENGINE = InnoDB;
 
 -- ---------------------------------------------------------------------
--- PONTO_MATERIAL  (tabela associativa - resolve o N:N)
--- Requisito R03 | RN03: todo ponto precisa de ao menos um material
--- A chave primaria composta impede o vinculo repetido do mesmo material.
--- ON DELETE CASCADE atende ao requisito R07.
+-- PONTO_MATERIAL
+-- Tabela associativa que resolve o relacionamento N:N entre pontos de
+-- coleta e materiais. A chave primária composta impede o vínculo
+-- repetido do mesmo material em um ponto (R03).
+-- R07: excluir um ponto remove seus vínculos (ON DELETE CASCADE).
 -- ---------------------------------------------------------------------
 CREATE TABLE ponto_material (
-    id_ponto_coleta INT NOT NULL,
-    id_material     INT NOT NULL,
-    PRIMARY KEY (id_ponto_coleta, id_material),
-    CONSTRAINT fk_pm_ponto
-        FOREIGN KEY (id_ponto_coleta) REFERENCES ponto_coleta(id)
-        ON DELETE CASCADE,
-    CONSTRAINT fk_pm_material
-        FOREIGN KEY (id_material) REFERENCES material(id)
+    idPontoColeta INT NOT NULL,
+    idMaterial    INT NOT NULL,
+
+    CONSTRAINT pk_ponto_material PRIMARY KEY (idPontoColeta, idMaterial),
+
+    CONSTRAINT fk_ponto_material_ponto
+        FOREIGN KEY (idPontoColeta) REFERENCES ponto_coleta (id)
         ON DELETE CASCADE
-);
+        ON UPDATE CASCADE,
+
+    CONSTRAINT fk_ponto_material_material
+        FOREIGN KEY (idMaterial) REFERENCES material (id)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE
+) ENGINE = InnoDB;
 
 -- ---------------------------------------------------------------------
 -- FEEDBACK
--- Requisito R08 | RN07: sempre vinculado a um cidadao e a um ponto
--- Composicao 1:N com ponto_coleta - o feedback nao existe sem o ponto,
--- por isso ON DELETE CASCADE.
+-- RN07: as duas chaves estrangeiras são obrigatórias — um feedback
+-- nunca existe sem um cidadão e sem um ponto de coleta.
+-- R07: excluir o ponto remove seus feedbacks (ON DELETE CASCADE);
+-- o usuário é protegido por RESTRICT para não apagar o autor por engano.
 -- ---------------------------------------------------------------------
 CREATE TABLE feedback (
-    id              INT AUTO_INCREMENT PRIMARY KEY,
-    descricao       VARCHAR(500) NOT NULL,
-    data            DATE NOT NULL,
-    status          ENUM('PENDENTE', 'ANALISADO') NOT NULL DEFAULT 'PENDENTE',
-    id_usuario      INT NOT NULL,
-    id_ponto_coleta INT NOT NULL,
-    CONSTRAINT fk_fb_usuario
-        FOREIGN KEY (id_usuario) REFERENCES usuario(id)
-        ON DELETE CASCADE,
-    CONSTRAINT fk_fb_ponto
-        FOREIGN KEY (id_ponto_coleta) REFERENCES ponto_coleta(id)
+    id            INT          NOT NULL AUTO_INCREMENT,
+    descricao     VARCHAR(500) NOT NULL,
+    data          DATE         NOT NULL,
+    status        VARCHAR(20)  NOT NULL,
+    idUsuario     INT          NOT NULL,
+    idPontoColeta INT          NOT NULL,
+
+    CONSTRAINT pk_feedback PRIMARY KEY (id),
+
+    CONSTRAINT fk_feedback_usuario
+        FOREIGN KEY (idUsuario) REFERENCES usuario (id)
+        ON DELETE RESTRICT
+        ON UPDATE CASCADE,
+
+    CONSTRAINT fk_feedback_ponto
+        FOREIGN KEY (idPontoColeta) REFERENCES ponto_coleta (id)
         ON DELETE CASCADE
-);
-
--- =====================================================================
--- DADOS DE EXEMPLO (para teste da aplicacao)
--- =====================================================================
-
-INSERT INTO usuario (nome, email, senha, tipo) VALUES
-    ('Administrador EcoMapa', 'admin@ecomapa.com', 'admin123', 'ADMINISTRADOR'),
-    ('Maria Souza',           'maria@email.com',   'maria123', 'CIDADAO');
-
-INSERT INTO material (nome, descricao, categoria) VALUES
-    ('Pilhas e baterias',   'Pilhas comuns, alcalinas e baterias de celular', 'Residuo perigoso'),
-    ('Eletronicos',         'Celulares, computadores, monitores e cabos',     'Eletroeletronico'),
-    ('Oleo de cozinha',     'Oleo de fritura usado, em garrafa fechada',      'Residuo organico'),
-    ('Papelao',             'Caixas e embalagens de papelao',                 'Reciclavel'),
-    ('Vidro',               'Garrafas e potes de vidro',                       'Reciclavel'),
-    ('Plastico',            'Garrafas PET e embalagens plasticas',             'Reciclavel'),
-    ('Roupas',              'Roupas e calcados em condicoes de uso',           'Reutilizavel');
-
-INSERT INTO ponto_coleta
-    (nome, tipo_estabelecimento, logradouro, numero, bairro, cidade, cep, telefone, horario_funcionamento, status)
-VALUES
-    ('Ecoponto Zona 7',      'Ecoponto municipal', 'Avenida Tuiuti',      '1500', 'Zona 07',   'Maringa', '87020-000', '(44) 3000-0001', 'Segunda a sexta, 8h as 17h',  'ATIVO'),
-    ('Supermercado Central', 'Comercio',           'Avenida Brasil',      '2300', 'Centro',    'Maringa', '87013-000', '(44) 3000-0002', 'Segunda a sabado, 9h as 20h', 'ATIVO'),
-    ('Cooperativa Recicla',  'Cooperativa',        'Rua Santos Dumont',   '450',  'Zona 03',   'Maringa', '87050-000', '(44) 3000-0003', 'Segunda a sexta, 8h as 18h',  'ATIVO'),
-    ('Posto Antigo Norte',   'Posto de coleta',    'Rua Neo Alves Martins','980', 'Zona 04',   'Maringa', '87014-000', '(44) 3000-0004', 'Encerrado',                    'INATIVO');
-
--- Vinculos entre pontos e materiais aceitos (R03)
-INSERT INTO ponto_material (id_ponto_coleta, id_material) VALUES
-    (1, 1), (1, 2), (1, 4), (1, 5), (1, 6),
-    (2, 1), (2, 3),
-    (3, 4), (3, 5), (3, 6), (3, 7),
-    (4, 2);
-
-INSERT INTO feedback (descricao, data, status, id_usuario, id_ponto_coleta) VALUES
-    ('O horario informado esta desatualizado, fecha as 16h.', '2026-09-05', 'PENDENTE',  2, 1),
-    ('Local bem sinalizado e de facil acesso.',               '2026-09-06', 'ANALISADO', 2, 3);
-
--- =====================================================================
--- CONSULTAS DE APOIO (base para os metodos do PontoColetaDAO)
--- =====================================================================
-
--- R04 - listar pontos ativos com os materiais aceitos
--- SELECT p.id, p.nome, p.logradouro, p.numero, p.bairro, p.cidade,
---        p.telefone, p.horario_funcionamento,
---        GROUP_CONCAT(m.nome ORDER BY m.nome SEPARATOR ', ') AS materiais
---   FROM ponto_coleta p
---   JOIN ponto_material pm ON pm.id_ponto_coleta = p.id
---   JOIN material m        ON m.id = pm.id_material
---  WHERE p.status = 'ATIVO'
---  GROUP BY p.id
---  ORDER BY p.nome;
-
--- R05 - pesquisar pontos ativos que aceitam determinado material
--- SELECT p.nome, p.logradouro, p.numero, p.bairro, p.horario_funcionamento
---   FROM ponto_coleta p
---   JOIN ponto_material pm ON pm.id_ponto_coleta = p.id
---   JOIN material m        ON m.id = pm.id_material
---  WHERE m.nome = ? AND p.status = 'ATIVO'
---  ORDER BY p.nome;
+        ON UPDATE CASCADE
+) ENGINE = InnoDB;
