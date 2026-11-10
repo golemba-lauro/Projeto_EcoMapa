@@ -1,7 +1,6 @@
 package br.unicesumar.ecomapa.model;
 
 import java.time.LocalDate;
-import java.util.List;
 
 /**
  * Usuário comum do EcoMapa: consulta pontos de coleta e envia feedbacks.
@@ -39,12 +38,5 @@ public class Cidadao extends Usuario {
         Feedback feedback = new Feedback(0, descricao, LocalDate.now(), Feedback.PENDENTE);
         ponto.adicionarFeedback(feedback);
         return feedback;
-    }
-
-    /*
-     * Pesquisa os pontos ativos que aceitam o material informado (R05).     
-     */
-    public List<PontoColeta> consultarPontosPorMaterial(String nomeMaterial) {
-        return null;
     }
 }

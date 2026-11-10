@@ -39,16 +39,6 @@ public abstract class Usuario {
      */
     public abstract String exibirPermissoes();
 
-    /**
-     * Confere se o e-mail e a senha informados são deste usuário (R09).
-     *
-     * TODO etapa 13: a validação real, com a senha vinda do banco, será feita
-     * em UsuarioService.
-     */
-    public boolean autenticar(String email, String senha) {
-        return false;
-    }
-
     public int getId() {
         return id;
     }

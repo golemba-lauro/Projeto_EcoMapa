@@ -26,27 +26,6 @@ public class Administrador extends Usuario {
                 + "vincular materiais aos pontos e gerenciar feedbacks.";
     }
 
-    /*
-     * Cadastra um novo ponto de coleta (R01).
-     */
-    public boolean cadastrarPonto(PontoColeta ponto) {
-        return false;
-    }
-
-    /*
-     * Atualiza os dados de um ponto de coleta já cadastrado (R06).
-     */
-    public boolean atualizarPonto(PontoColeta ponto) {
-        return false;
-    }
-
-    /*
-     * Exclui um ponto de coleta, junto com seus vínculos e feedbacks (R07).
-     */
-    public boolean excluirPonto(int id) {
-        return false;
-    }
-
     /**
      * Vincula um material aos materiais aceitos por um ponto (R03).
      * O vínculo repetido é recusado pelo próprio ponto de coleta.
