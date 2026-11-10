@@ -57,10 +57,10 @@ O **EcoMapa** centraliza essas informações. O cidadão pesquisa pelo material 
 
 | ID | Requisito | Origem |
 |---|---|---|
-| R01 | O sistema deve permitir ao administrador cadastrar pontos de coleta, com nome, tipo de estabelecimento, endereço completo (logradouro, número, bairro, cidade e CEP), telefone, horário de funcionamento e situação (ativo ou inativo). | Dor 2.2 · RN01 |
+| R01 | O sistema deve permitir ao administrador cadastrar pontos de coleta, com nome, endereço, telefone, horário de funcionamento e situação (ativo ou inativo). | Dor 2.2 · RN01 |
 | R02 | O sistema deve permitir ao administrador cadastrar materiais, com nome, descrição e categoria (eletrônicos, pilhas e baterias, óleo de cozinha, roupas, plástico, vidro ou papelão), impedindo o cadastro de dois materiais com o mesmo nome. | Dor 2.2 · RN02 |
 | R03 | O sistema deve permitir ao administrador vincular a cada ponto de coleta um ou mais materiais aceitos, exigindo pelo menos um material por ponto e impedindo o vínculo repetido do mesmo material. | RN03 |
-| R04 | O sistema deve permitir ao cidadão consultar a lista de pontos de coleta ativos, exibindo nome, endereço completo, telefone, horário de funcionamento e materiais aceitos, ordenados por nome. | Dor 2.2 · RN04 |
+| R04 | O sistema deve permitir ao cidadão consultar a lista de pontos de coleta ativos, exibindo nome, endereço, telefone, horário de funcionamento e materiais aceitos, ordenados por nome. | Dor 2.2 · RN04 |
 | R05 | O sistema deve permitir ao cidadão pesquisar pontos de coleta pelo nome do material, retornando apenas os pontos ativos que aceitam aquele material, com nome, endereço e horário de funcionamento. | Dor 2.2 · RN06 |
 | R06 | O sistema deve permitir ao administrador atualizar nome, endereço, telefone, horário de funcionamento, situação e materiais aceitos de um ponto de coleta já cadastrado. | Dor 2.2 · RN05 |
 | R07 | O sistema deve permitir ao administrador excluir um ponto de coleta, removendo também seus vínculos com materiais e os feedbacks associados a ele. | RN05 · RN07 |
