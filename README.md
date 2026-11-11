@@ -103,7 +103,7 @@ A coluna `tipo` de `USUARIO` funciona como discriminadora: é ela que mapeia a h
 
 O CRUD exigido na segunda entrega é implementado sobre a entidade principal, `PontoColeta`:
 
-| Operação | Função no sistema | Implementação prevista |
+| Operação | Função no sistema | Implementação |
 |---|---|---|
 | CREATE | Cadastro de novos pontos de coleta (R01). | `PontoColetaDAO.inserir(PontoColeta p)` — INSERT via JDBC |
 | READ | Consulta dos pontos cadastrados e pesquisa por material (R04 e R05). | `PontoColetaDAO.listar()` e `buscarPorMaterial(String nome)` |
@@ -152,12 +152,17 @@ EcoMapa/
 │       └── Main.java
 ├── docs/
 │   ├── diagrama-classe.png
-│   └── der.png
+│   ├── der.png
+│   ├── guia-instalacao.pdf
+│   └── roteiro-de-testes.md
 ├── database/
 │   └── script.sql
+├── lib/                → driver JDBC (não versionada)
 ├── README.md
 └── .gitignore
 ```
+
+A pasta `lib/` não vai para o repositório: o `.gitignore` ignora `lib/` e `*.jar`, porque dependência externa não se versiona junto com o código. Ela é criada por quem for executar o projeto, conforme o passo 2 abaixo.
 
 ---
 
@@ -167,7 +172,6 @@ EcoMapa/
 
 - JDK 21 ou superior (`java -version` para conferir)
 - MySQL 8 instalado e em execução
-- Driver MySQL Connector/J (`mysql-connector-j-<versão>.jar`)
 
 O projeto roda em Windows, macOS e Linux sem alteração de código, por ser executado sobre a JVM.
 
@@ -179,23 +183,40 @@ O projeto roda em Windows, macOS e Linux sem alteração de código, por ser exe
    cd Projeto_EcoMapa
    ```
 
-2. Criar o banco executando o script no MySQL:
+2. Instalar a dependência — driver JDBC do MySQL:
+
+   Baixar o **MySQL Connector/J** em https://dev.mysql.com/downloads/connector/j, escolhendo a opção **Platform Independent** (não é necessário criar conta: há o link "No thanks, just start my download"). Abrir o arquivo compactado, retirar de dentro dele o `mysql-connector-j-<versão>.jar`, criar uma pasta `lib` na raiz do projeto e colocar o `.jar` nela:
+
+   ```
+   Projeto_EcoMapa/
+   └── lib/
+       └── mysql-connector-j-<versão>.jar
+   ```
+
+3. Criar o banco executando o script no MySQL:
    ```bash
    mysql -u root -p < database/script.sql
    ```
+   No Windows com PowerShell, usar `cmd /c "mysql -u root -p < database\script.sql"`, porque o PowerShell não aceita o redirecionamento `<`.
 
-3. Informar usuário e senha do banco em `src/br/unicesumar/ecomapa/util/ConexaoMySQL.java`.
+4. Informar usuário e senha do banco em `src/br/unicesumar/ecomapa/util/ConexaoMySQL.java`.
 
-4. Compilar (Linux/macOS):
+5. Compilar (Linux/macOS):
    ```bash
-   javac -cp .:lib/mysql-connector-j.jar -d bin $(find src -name "*.java")
+   javac -cp lib/mysql-connector-j-<versão>.jar -d bin $(find src -name "*.java")
    ```
-   No Windows, trocar `:` por `;` no classpath.
+   No Windows (PowerShell):
+   ```powershell
+   javac -cp "lib/mysql-connector-j-<versão>.jar" -d bin (Get-ChildItem -Recurse src -Filter *.java | % FullName)
+   ```
 
-5. Executar:
+6. Executar:
    ```bash
-   java -cp bin:lib/mysql-connector-j.jar br.unicesumar.ecomapa.Main
+   java -cp bin:lib/mysql-connector-j-<versão>.jar br.unicesumar.ecomapa.Main
    ```
+   No Windows, trocar os dois-pontos do classpath por ponto e vírgula: `bin;lib/...`.
+
+O passo a passo completo, com as mensagens de erro mais comuns e o que fazer em cada uma, está em `docs/guia-instalacao.pdf`.
 
 ---
 
@@ -203,6 +224,9 @@ O projeto roda em Windows, macOS e Linux sem alteração de código, por ser exe
 
 - `docs/diagrama-classe.png` — Diagrama de Classes (herança, polimorfismo e composição 1:N entre `PontoColeta` e `Feedback`)
 - `docs/der.png` — Diagrama Entidade-Relacionamento, com chaves primárias, chaves estrangeiras e cardinalidades
+- `docs/EcoMapa_1a_Entrega.pdf` — documento da 1ª entrega
+- `docs/guia-instalacao.pdf` — guia de instalação e execução do sistema
+- `docs/roteiro-de-testes.md` — roteiro de testes executado sobre o sistema integrado
 - `database/script.sql` — script de criação das tabelas
 
 ---
@@ -211,5 +235,5 @@ O projeto roda em Windows, macOS e Linux sem alteração de código, por ser exe
 
 | Entrega | Foco | Situação |
 |---|---|---|
-| 1ª (1º bimestre) | Concepção, planejamento e estruturação | Em andamento |
-| 2ª (2º bimestre) | Software funcional com POO, CRUD e persistência | Não iniciada |
+| 1ª (1º bimestre) | Concepção, planejamento e estruturação | Concluída — entregue em 11/09/2026 |
+| 2ª (2º bimestre) | Software funcional com POO, CRUD e persistência | Concluída — etapas 10 a 16 implementadas e testadas |
